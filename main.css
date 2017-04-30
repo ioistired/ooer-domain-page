@@ -1,10 +1,9 @@
-#Until we get something like the DVD ooer setup
+/*Until we get something like the DVD ooer setup*/
 
 body { background-image: url("//d.thumbs.redditmedia.com/hn64UDlHB1-7n1C9.png");
   background-color:#333; }
 #snow{
 	background: none;
-	font-family: Androgyne;
 	background-image: url('https://i.imgur.com/6O7mpgx.png'), url('https://i.imgur.com/SufCVnn.png'), url('https://i.imgur.com/suxiomG.png');
 	height: 100%;
 	left: 0;
