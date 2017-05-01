@@ -146,5 +146,5 @@ body { background-image: url("//d.thumbs.redditmedia.com/hn64UDlHB1-7n1C9.png");
   animation-timing-function: ease-in-out; }
 h1 {
     text-align: center;
-    animation: coolspin .50s linear 1s infinite;
+    animation: coolspin .10s linear 0s infinite;
 }
