@@ -1,5 +1,8 @@
 /*Until we get something like the DVD ooer setup*/
 
+/* Hide scrollbars (sometimes created by the snow) */
+html { overflow:hidden; }
+
 a
 { 
 	text-align: center;
