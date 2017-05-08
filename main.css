@@ -133,6 +133,9 @@ body
 h1
 {
 	text-align: center;
+}
+h1:hover
+{
 	animation: coolspin .10s linear 0s infinite;
 }
 
