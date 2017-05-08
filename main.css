@@ -26,36 +26,43 @@ body
 	top: 0;
 	width: 100%;
 	z-index:1;
-	-webkit-animation: snow 10s linear infinite;
-	-moz-animation: snow 10s linear infinite;
-	-ms-animation: snow 10s linear infinite;
-	animation: snow 10s linear infinite;
+	/* In case of vomit, adjust values accordingly */
+	-webkit-animation: snow 18s linear infinite;
+	-moz-animation: snow 18s linear infinite;
+	-ms-animation: snow 18s linear infinite;
+	animation: snow 18s linear infinite;
 }
-
+/* Snow keyframes + browser support */
 @keyframes snow
 {
 	0% { background-position: 0px 0px, 0px 0px, 0px 0px; }
-	100% { background-position: 500px 500px, 100px 200px, -100px 150px; }
+	33% { background-position: 502px 501px, 143px 138px, -106px 102px; }
+	66% { background-position: 1004px 1002px, 286px 277px, -213px 205px; }
+	100% { background-position: 1506px 1503px, 429px 416px, -320px 308px; }
 }
 
 @-moz-keyframes snow
 {
 	0% { background-position: 0px 0px, 0px 0px, 0px 0px; }
-	100% { background-position: 500px 500px, 100px 200px, -100px 150px; }
+	33% { background-position: 502px 501px, 143px 138px, -106px 102px; }
+	66% { background-position: 1004px 1002px, 286px 277px, -213px 205px; }
+	100% { background-position: 1506px 1503px, 429px 416px, -320px 308px; }
 }
-
 @-webkit-keyframes snow
 {
 	0% { background-position: 0px 0px, 0px 0px, 0px 0px; }
-	100% { background-position: 500px 500px, 100px 200px, -100px 150px; }
+	33% { background-position: 502px 501px, 143px 138px, -106px 102px; }
+	66% { background-position: 1004px 1002px, 286px 277px, -213px 205px; }
+	100% { background-position: 1506px 1503px, 429px 416px, -320px 308px; }
 }
-
 @-ms-keyframes snow
 {
-	0% { background-position: 0px 0px, 0px 0px, 0px 0px;}
-	100% { background-position: 500px 500px, 100px 200px, -100px 150px;}
-}	
-
+	0% { background-position: 0px 0px, 0px 0px, 0px 0px; }
+	33% { background-position: 502px 501px, 143px 138px, -106px 102px; }
+	66% { background-position: 1004px 1002px, 286px 277px, -213px 205px; }
+	100% { background-position: 1506px 1503px, 429px 416px, -320px 308px; }
+}
+/* Intense body */
 @keyframes coolspin
 {
 	2% { transform: translate(0.5px, -1.5px) rotate(-0.5deg); }
