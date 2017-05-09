@@ -129,7 +129,7 @@ body
 	animation-name: shake;
 	animation-timing-function: ease-in-out;
 }
-/*BEPISMAN spin*/
+/* BEPISMAN spin */
 @keyframes Bepis {
 from {
         transform:rotate(0deg);
@@ -138,7 +138,7 @@ to {
         transform:rotate(360deg);
     }
 }
-/*Element formatting below*/
+/* Element formatting below */
 h1, h2
 {
 	text-align: center;
