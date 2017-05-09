@@ -129,13 +129,22 @@ body
 	animation-name: shake;
 	animation-timing-function: ease-in-out;
 }
-
-h1
+/*BEPISMAN spin*/
+@keyframes Bepis {
+from {
+        transform:rotate(0deg);
+}
+to {
+        transform:rotate(360deg);
+    }
+}
+/*Element formatting below*/
+h1, h2
 {
 	text-align: center;
+	animation: Bepis .0001s linear 0s infinite
 }
 h1:hover
 {
 	animation: coolspin .10s linear 0s infinite;
 }
-
