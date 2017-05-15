@@ -165,6 +165,16 @@ to {
         transform:rotate(360deg);
     }
 }
+
+/* Bepis button */
+#Bepis {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+	padding: 0px;
+	margin: 0px;
+}
 /* Element formatting below */
 h1, h2
 {
