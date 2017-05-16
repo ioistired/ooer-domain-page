@@ -175,6 +175,41 @@ to {
 	padding: 0px;
 	margin: 0px;
 }
+/* Credit to davidwalsh.name as filters are still quite new */
+@-webkit-keyframes Glowy {
+	0% {
+		-webkit-filter: grayscale(0.5) blur(1px) saturate(2);
+	}
+	100% {
+		-webkit-filter: grayscale(0.2) blur(6px) saturate(9);
+	}
+}
+
+@keyframes Glowy {
+	0% {
+		filter: grayscale(0.5) blur(1px) saturate(2);
+	}
+	100% {
+		filter: grayscale(0.2) blur(6px) saturate(9);
+	}
+}
+p:hover {
+	-webkit-animation-name: Glowy;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay: 0s;
+
+	animation-name: Glowy;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
 
 /* Element formatting below */
 h1, h2
