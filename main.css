@@ -195,7 +195,7 @@ to {
 }
 p:hover {
 	-webkit-animation-name: Glowy;
-	-webkit-animation-duration: 4s;
+	-webkit-animation-duration: 7s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: alternate;
 	-webkit-animation-timing-function: ease-out;
@@ -203,7 +203,7 @@ p:hover {
 	-webkit-animation-delay: 0s;
 
 	animation-name: Glowy;
-	animation-duration: 4s;
+	animation-duration: 7s;
 	animation-iteration-count: 1;
 	animation-direction: alternate;
 	animation-timing-function: ease-out;
