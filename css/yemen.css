@@ -2,3 +2,8 @@ body
 {
 	background-image: url("/img/bgalt.png");
 }
+
+audio
+{
+	display: none;
+}

@@ -12,14 +12,14 @@ a
 
 body
 {
-	background-image: url("img/bg.png");
+	background-image: url("/img/bg.png");
 	background-color:#333;
 }
 
 #snow
 {
 	background: none;
-	background-image: url('img/snow0.png'), url('img/snow1.png'), url('img/snow2.png');
+	background-image: url("/img/snow0.png"), url("/img/snow1.png'), url("/img/snow2.png");
 	height: 100%;
 	left: 0;
 	position: absolute;
