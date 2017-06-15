@@ -226,35 +226,35 @@ h1:hover
 /* buttons */
 .Buttons 
 {
-  text-align: center;
-  display:flex;
-  justify-content:center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 13pt;
-  position: fixed;
-  bottom: 2%;
-  width: 100%;
+	text-align: center;
+	display:flex;
+	justify-content:center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 13pt;
+	position: fixed;
+	bottom: 2%;
+	width: 100%;
 }
 
 .Buttons a 
 {
-  display: block;
-  width: 60px;
-  height: 25px;
-  float: left;
-  margin-left: 3px;
-  background-color: yellow; 
-  border: 10px solid red
+	display: block;
+	width: 60px;
+	height: 25px;
+	float: left;
+	margin-left: 3px;
+	background-color: yellow; 
+	border: 10px solid red
 }
 .Buttons a:hover 
 {
-    border: 10px solid blue
+	border: 10px solid blue
 }
 .Buttons #last 
 {
-  width: 90px;
-  background-color: yellow; 
-  border: 10px solid red
+	width: 90px;
+	background-color: yellow; 
+	border: 10px solid red
 //  transition: transform 0.8s;
 }
 
@@ -267,18 +267,19 @@ h1:hover
 
 .Buttons #first 
 {
-  width: 90px;
-  background-color: yellow; 
-  border: 10px solid red
-  pointer-events: none;
+	width: 90px;
+	background-color: yellow; 
+	border: 10px solid red
+	pointer-events: none;
 }
 
 #hideme 
 {
-  text-align: center;
-  position: relative; left: 180px;
-  position: fixed;
-  bottom: 4%;
-  width: 100%;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+	position: relative; left: 180px;
+	position: fixed;
+	bottom: 3%;
+	width: 100%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
 }
