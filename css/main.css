@@ -176,6 +176,14 @@ to {
 	padding: 0px;
 	margin: 0px;
 }
+p {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+	padding: 0px;
+	margin: 0px;
+}
 /* Credit to davidwalsh.name as filters are still quite new */
 @-webkit-keyframes Glowy {
 	0% {
@@ -276,8 +284,7 @@ h1:hover
 #hideme 
 {
 	text-align: center;
-	position: relative; left: 180px;
-	position: fixed;
+	position: fixed; left: 180px;
 	bottom: 3%;
 	width: 100%;
 	font-family: "Comic Sans MS", cursive, sans-serif;
