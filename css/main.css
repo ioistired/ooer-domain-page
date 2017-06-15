@@ -3,7 +3,7 @@
 /* Hide scrollbars (sometimes created by the snow) */
 html { overflow:hidden; }
 
-a
+h1
 { 
 	text-align: center;
 	font-family: "Comic Sans MS", cursive, sans-serif;
@@ -221,4 +221,64 @@ h1, h2
 h1:hover
 {
 	animation: coolspin .10s linear 0s infinite;
+}
+
+/* buttons */
+.Buttons 
+{
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 13pt;
+  position: fixed;
+  bottom: 2%;
+  width: 100%;
+}
+
+.Buttons a 
+{
+  display: block;
+  width: 60px;
+  height: 25px;
+  float: left;
+  margin-left: 3px;
+  background-color: yellow; 
+  border: 10px solid red
+}
+.Buttons a:hover 
+{
+    border: 10px solid blue
+}
+.Buttons #last 
+{
+  width: 90px;
+  background-color: yellow; 
+  border: 10px solid red
+//  transition: transform 0.8s;
+}
+
+.Buttons #last:hover 
+{ 
+//  border: 10px solid orange;
+//  transition: transform 0.8s;
+//  transform: translate(90px, 0px);
+}
+
+.Buttons #first 
+{
+  width: 90px;
+  background-color: yellow; 
+  border: 10px solid red
+  pointer-events: none;
+}
+
+#hideme 
+{
+  text-align: center;
+  position: relative; left: 180px;
+  position: fixed;
+  bottom: 4%;
+  width: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
