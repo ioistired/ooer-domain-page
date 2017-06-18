@@ -1,0 +1,63 @@
+.slider {
+  max-width: 100vh;
+  height: 100vh;
+  margin: 20px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(http://d.ibtimes.co.uk/en/full/1485498/theresa-may.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 12s infinite;
+
+} 
+.slide2 {
+  background: url(http://nigeriapoliticsonline.com/wp-content/uploads/2016/07/18137-1t8ewuk.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 12s infinite;
+}
+.slide3 {
+    background: url(http://www.newstatesman.com/sites/default/files/styles/nodeimage/public/blogs_2017/04/2017_16_may_newsmaker.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 12s infinite;
+}
+.slide4 {
+    background: url(http://thelinkup.com/wp-content/uploads/2017/04/gettyimages-484567630.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 12s infinite;
+}
+.slide5 {
+    background: url(http://i.dailymail.co.uk/i/pix/2014/11/28/2392901D00000578-2853011-image-80_1417182784247.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 12s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
