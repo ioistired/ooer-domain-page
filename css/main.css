@@ -10,6 +10,10 @@ h1
 	font-size: 178pt;
 }
 
+h1 a {
+	font-size: 178pt;
+}
+
 body
 {
 	background-image: url("/img/bg.png");
