@@ -7,6 +7,9 @@ h1
 { 
 	text-align: center;
 	font-family: "Comic Sans MS", cursive, sans-serif;
+	position:relative;
+	z-index:9999;
+	margin-top: -1cm;
 }
 
 h1 a {
