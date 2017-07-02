@@ -8,7 +8,7 @@ h1
 	text-align: center;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	position:relative;
-	z-index:9999;
+	z-index:999;
 	margin-top: -1cm;
 }
 
@@ -269,6 +269,7 @@ h1:hover
 	width: 90px;
 	background-color: yellow; 
 	border: 10px solid red
+	z-index:9992;
 //  transition: transform 0.8s;
 }
 
