@@ -1,0 +1,9 @@
+#ImageOverlay  {
+width:100%;
+height:100%;
+position:absolute;
+left:0;
+top:0; /*If you want it at the bottom you probably want bottom:0 instead*/
+z-index: 999;
+pointer-events:none;
+}
