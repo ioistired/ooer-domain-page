@@ -2,11 +2,61 @@ body	{
 background-image: url("/img/tiled static.gif");
 background-color:#ffffff;
 }
+/* Animations */
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
+/*Content and webm formatting*/
 h2 {
 position: absolute;
 left: 8vw;
 top: 10vh;
+-webkit-animation: blink 2s;
+-webkit-animation-iteration-count: infinite;
+-moz-animation: blink 2s;
+-moz-animation-iteration-count: infinite;
+-o-animation: blink 2s;
+-o-animation-iteration-count: infinite;
 }
 
 #ImageOverlay  {
