@@ -1,7 +1,6 @@
-body
-{
-	background-image: url("/img/tiled static.gif");
-	background-color:#ffffff;
+body	{
+background-image: url("/img/tiled static.gif");
+background-color:#ffffff;
 }
 
 #ImageOverlay  {
