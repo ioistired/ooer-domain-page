@@ -8,14 +8,14 @@ function endstatic()
 
 function startvid()
 {
-  play.style.visibility = "hidden";
+  play.style.display = "none";
 }
 
 function onplay(e)
 {
-  pause.style.visibility = "hidden";
-  play.style.visibility = "visible";
-
+  pause.style.display = "none";
+  play.style.display = "inline";
+  console.log("Play successed");
   setTimeout(startvid, 5000);
   setTimeout(endstatic, 2000);
 }
