@@ -21,7 +21,11 @@ function onplay(e)
   setTimeout(endstatic, 2000);
 }
 
+window.onload = function()
+{
 pause = document.getElementById("pause");
 play = document.getElementById("play");
 console.log("load successed");
 pause.onclick = onplay;
+}
+
