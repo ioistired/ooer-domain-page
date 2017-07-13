@@ -1,5 +1,5 @@
-var pause = document.getElementById("pause");
-var play = document.getElementById("play");
+var pause = undefined;
+var play = undefined;
 
 function endstatic()
 {
@@ -14,10 +14,17 @@ function startvid()
 function onplay(e)
 {
   pause.style.display = "none";
-  play.style.display = "block";
-  console.log("Play successed");
+  play.style.display = "inline";
+
   setTimeout(startvid, 5000);
   setTimeout(endstatic, 2000);
 }
 
-pause.onclick = onplay;
+body.onload = function()
+{
+  pause = document.getElementById("pause");
+  play = document.getElementById("play");
+  console.log("load successed");
+  pause.onclick = onplay;
+}
+
