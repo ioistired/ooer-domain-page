@@ -3,7 +3,8 @@ var play = undefined;
 
 function endstatic()
 {
-  body.style.backgroundImage = "none";
+  document.body.style.backgroundImage = "none";
+  document.body.style.backgroundColor = "black";
 }
 
 function startvid()
@@ -20,11 +21,7 @@ function onplay(e)
   setTimeout(endstatic, 2000);
 }
 
-document.body.onload = function()
-{
-  pause = document.getElementById("pause");
-  play = document.getElementById("play");
-  console.log("load successed");
-  pause.onclick = onplay;
-}
-
+pause = document.getElementById("pause");
+play = document.getElementById("play");
+console.log("load successed");
+pause.onclick = onplay;
