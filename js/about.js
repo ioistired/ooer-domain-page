@@ -3,7 +3,7 @@ var play = document.getElementById("play");
 
 function endstatic()
 {
-  body.style.background-image = "none";
+  body.style.backgroundImage = "none";
 }
 
 function startvid()
@@ -14,10 +14,9 @@ function startvid()
 function onplay(e)
 {
   pause.style.display = "none";
-  play.style.display = "inline";
+  play.style.display = "block";
   console.log("Play successed");
   setTimeout(startvid, 5000);
   setTimeout(endstatic, 2000);
 }
 
-pause.onclick = onplay;
