@@ -63,7 +63,7 @@ h2 #play {
 position: absolute;
 left: 8vw;
 top: 10vh;
-visibility: hidden;
+display: none
 }
 
 #ImageOverlay  {
