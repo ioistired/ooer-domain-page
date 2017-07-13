@@ -57,6 +57,7 @@ top: 10vh;
 -moz-animation-iteration-count: infinite;
 -o-animation: blink 2s;
 -o-animation-iteration-count: infinite;
+cursor:pointer;
 }
 
 h2 #play {
