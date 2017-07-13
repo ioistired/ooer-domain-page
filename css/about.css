@@ -47,7 +47,7 @@ background-color:#ffffff;
 }
 
 /*Content and webm formatting*/
-h2 {
+h2 #pause {
 position: absolute;
 left: 8vw;
 top: 10vh;
@@ -57,6 +57,13 @@ top: 10vh;
 -moz-animation-iteration-count: infinite;
 -o-animation: blink 2s;
 -o-animation-iteration-count: infinite;
+}
+
+h2 #play {
+position: absolute;
+left: 8vw;
+top: 10vh;
+visibility: hidden;
 }
 
 #ImageOverlay  {
