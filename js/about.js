@@ -20,7 +20,7 @@ function onplay(e)
   setTimeout(endstatic, 2000);
 }
 
-body.onload = function()
+document.body.onload = function()
 {
   pause = document.getElementById("pause");
   play = document.getElementById("play");
