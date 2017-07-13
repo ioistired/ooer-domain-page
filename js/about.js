@@ -20,3 +20,4 @@ function onplay(e)
   setTimeout(endstatic, 2000);
 }
 
+pause.onclick = onplay;
