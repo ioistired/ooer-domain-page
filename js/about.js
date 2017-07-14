@@ -71,4 +71,4 @@ window.onload = function()
   canvas.height = canvas.clientHeight;
   
   context.clearRect(0, 0, canvas.width, canvas.height);
-//}
+}
