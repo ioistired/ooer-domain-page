@@ -76,3 +76,12 @@ top:0;
 z-index: 100;
 pointer-events:none;
 }
+
+#canvas {
+width:96%;
+height:96%;
+position:absolute;
+left:2%;
+top:2%;
+z-index: -100;
+}
