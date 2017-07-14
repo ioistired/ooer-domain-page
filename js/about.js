@@ -2,11 +2,15 @@ var pause = undefined;
 var play = undefined;
 var video = undefined;
 var canvas = undefined;
+var tapesound = undefined;
+var staticsound = undefined;
 
 function endstatic()
 {
   document.body.style.backgroundImage = "none";
   document.body.style.backgroundColor = "black";
+  
+  staticsound.pause();
 }
 
 function videoloop()
@@ -19,9 +23,18 @@ function videoloop()
 
 function startvid()
 {
-  play.style.display = "none";
   canvas.style.display = "inline";
   video.play();
+}
+
+function playoff()
+{
+  play.style.display = "none";
+}
+
+function startsound()
+{
+  tapesound.play();
 }
 
 function onplay(e)
@@ -29,8 +42,10 @@ function onplay(e)
   pause.style.display = "none";
   play.style.display = "inline";
 
+  setTimeout(playoff, 7000);
   setTimeout(startvid, 5000);
   setTimeout(endstatic, 2000);
+  setTimeout(startsound, 1000);
 }
 
 function reset()
@@ -41,6 +56,11 @@ function reset()
 
   video.currentTime = 0;
   video.pause();
+  
+  tapesound.currentTime = 0;
+  tapesound.pause();
+  
+  staticsound.play();
 
   var string = "/img/tiled static.gif";
   document.body.style.backgroundImage = "url('" + string + "')";
@@ -54,8 +74,17 @@ window.onload = function()
   console.log("load successed");
   pause.onclick = onplay;
 
+  tapesound = document.createElement("audio");
+  tapesound.src = "/tapefeed.mp3";
+  tapesound.pause();
+  
+  staticsound = document.createElement("audio");
+  staticsound.src = "";
+  staticsound.loop = true;
+  staticsound.play();
+
   video = document.createElement("video");
-  video.src = "/Testing video.mp4";
+  video.src = "/Testing%20video.mp4";
   video.pause();
   video.addEventListener('play',function(){
         videoloop();
@@ -72,3 +101,5 @@ window.onload = function()
   
   context.clearRect(0, 0, canvas.width, canvas.height);
 }
+
+
