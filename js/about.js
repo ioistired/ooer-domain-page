@@ -84,7 +84,7 @@ window.onload = function()
   staticsound.play();
 
   video = document.createElement("video");
-  video.src = "/Testing%20video.mp4";
+  video.src = "/Testing video.mp4";
   video.pause();
   video.addEventListener('play',function(){
         videoloop();
