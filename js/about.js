@@ -44,7 +44,7 @@ function onplay(e)
 
   setTimeout(playoff, 7000);
   setTimeout(startvid, 5000);
-//  setTimeout(endstatic, 2000);
+  setTimeout(endstatic, 2000);
   setTimeout(startsound, 1000);
 }
 
