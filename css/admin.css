@@ -1,1 +1,53 @@
+/*Until we get something like the DVD ooer setup*/
 
+/* Hide scrollbars (sometimes created by the snow) */
+html { overflow:hidden; }
+
+h1
+{ 
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	position:relative;
+	margin-top: 2%;
+}
+
+h1 a {
+	font-size: 11.5vw;
+}
+
+body
+{
+    height:100%;
+    width:100%;
+    animation:YEARG 1s infinite 0s;
+    -moz-animation:YEARG 1s infinite 0s;
+    -webkit-animation:YEARG 1s infinite 0s;
+    -o-animation:YEARG 1s infinite 0s;
+    
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes YEARG {
+    0% {
+        background-color: #fe0000;
+        animation-timing-function: steps(1, end);
+        -webkit-animation-timing-function: steps(1, end);
+        -moz-animation-timing-function: steps(1, end);
+        -ms-animation-timing-function: steps(1, end);
+        -o-animation-timing-function: steps(1, end);
+    }
+    50% {
+        -webkit-animation-timing-function: steps(1, end);
+        -moz-animation-timing-function: steps(1, end);
+        -ms-animation-timing-function: steps(1, end);
+        -o-animation-timing-function: steps(1, end);
+        animation-timing-function: steps(1, end);
+        background-color: #0000ff;
+    }
+    100% {
+        background-color: #fe0000;
+    }
+}
