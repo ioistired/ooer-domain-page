@@ -1,4 +1,6 @@
-var audio = undefined;
+window.onload = function()
+{
+  var audio = undefined;
 
 function parseQuery(q)
 {
@@ -35,4 +37,5 @@ if(query.lang == "scottish")
   var div = document.createElement("div");
   div.innerHTML = '<img src="/img/Scotland Forever.png" id="ImageOverlay">'
   document.getElementById("body").appendChild(div);
+}
 }
