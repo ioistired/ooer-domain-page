@@ -1,14 +1,18 @@
- .fade {  
- opacity:0;  
- webkit-animation:fadeIn ease-in 1;  
- -moz-animation:fadeIn ease-in 1;  
--o-animation:fadeIn ease-in 1;  
-animation:fadeIn ease-in 1;  
--webkit-animation-fill-mode:forwards;  
--moz-animation-fill-mode:forwards;  
--o-animation-fill-mode:forwards;  
-animation-fill-mode:forwards;  
- }  
+.fade-in {
+
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
    
 #ImageOverlay  {
 width:100%;
@@ -18,7 +22,9 @@ left:0;
 top:0;
 z-index: 100;
 pointer-events:none;
-opacity: 0.2;
+	-webkit-animation: fadeIn 4s ease-in 1 forwards;
+  animation: fadeIn 4s ease-in 1 forwards;
+  opacity: 0;
 }
 
 #canvas {
