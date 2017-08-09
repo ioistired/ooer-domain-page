@@ -1,3 +1,5 @@
+var audio = undefined;
+
 function parseQuery(q)
 {
   var stage1 = q.slice(1).split("&");
@@ -17,5 +19,16 @@ var query = parseQuery(window.location.search);
 
 if(query.lang == "scottish")
 {
-  console.log("och");
+  var head  = document.getElementsByTagName('head')[0];
+  var link  = document.createElement('link');
+  link.rel  = 'stylesheet';
+  link.type = 'text/css';
+  link.href = '/css/lang/Scot.css';
+  link.media = 'all';
+  head.appendChild(link);
+
+  var audio = document.createElement("audio");
+  audio.src = "/onLoadLoop.mp3";
+  audio.loop = true;
+  audio.play();
 }
