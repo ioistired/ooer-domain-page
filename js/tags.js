@@ -31,4 +31,8 @@ if(query.lang == "scottish")
   audio.src = "audio/scot.mp3";
   audio.loop = true;
   audio.play();
+  
+  var div = document.createElement("div");
+  div.innerHTML = "<img src="/img/Scotland Forever.png" id="ImageOverlay">"
+  document.appendChild(div);
 }
