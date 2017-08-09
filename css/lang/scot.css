@@ -23,6 +23,8 @@ pointer-events:none;
 animation: fadeIn 4s ease-in 4 forwards;
 -webkit-animation-iteration-count: 1;
 animation-iteration-count: 1;
+-webkit-animation-delay: 6s;
+animation-delay: 6s;
   opacity: 0;
 }
 
