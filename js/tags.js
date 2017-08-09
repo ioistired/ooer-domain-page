@@ -38,4 +38,40 @@ if(query.lang == "scottish")
   div.innerHTML = '<img src="/img/Scotland Forever.png" id="ImageOverlay">'
   document.body.appendChild(div);
 }
+  else if(query.lang == "us")
+{
+  var head  = document.getElementsByTagName('head')[0];
+  var link  = document.createElement('link');
+  link.rel  = 'stylesheet';
+  link.type = 'text/css';
+  link.href = '/css/lang/us.css';
+  link.media = 'all';
+  head.appendChild(link);
+
+  var source = [];
+  source[0] = "";
+  source[1] = "";
+  source[2] = "";
+  source[3] = "";
+  source[4] = "";
+  source[5] = "";
+  source[6] = "";
+  source[7] = "";
+  source[8] = "";
+  source[9] = "";
+
+  var audio = [];
+  for(var i=0;i<10;++i)
+  {
+    audio[i] = document.createElement("audio");
+    audio[i].src = source[i];
+    audio[i].pause();
+
+  var hoverfunc = function(){
+    audio[Math.random()*10].play();
+  }
+
+  document.getElementById("name").onmouseover = hoverfunc;
+}
+
 }
