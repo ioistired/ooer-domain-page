@@ -1,6 +1,4 @@
-window.onload = function()
-{
-  var audio = undefined;
+var audio = undefined;
 
 function parseQuery(q)
 {
@@ -73,3 +71,4 @@ if(query.lang == "scottish")
 
   document.getElementById("name").onmouseover = hoverfunc;
 }
+
