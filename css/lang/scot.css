@@ -1,16 +1,13 @@
-.fade-in {
-
-}
 
 @-webkit-keyframes fadeIn {
   to {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 
 @keyframes fadeIn {
   to {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
    
@@ -22,8 +19,8 @@ left:0;
 top:0;
 z-index: 100;
 pointer-events:none;
-	-webkit-animation: fadeIn 4s ease-in 1 forwards;
-  animation: fadeIn 4s ease-in 1 forwards;
+	-webkit-animation: fadeIn 4s ease-in 4 forwards;
+  animation: fadeIn 4s ease-in 4 forwards;
   opacity: 0;
 }
 
