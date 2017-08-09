@@ -17,7 +17,7 @@ height:100%;
 position:absolute;
 left:0;
 top:0;
-z-index: 100;
+z-index: -2;
 pointer-events:none;
 -webkit-animation: fadeIn 4s ease-in 4 forwards;
 animation: fadeIn 4s ease-in 4 forwards;
