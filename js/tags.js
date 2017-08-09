@@ -64,6 +64,7 @@ if(query.lang == "scottish")
     audio[i] = document.createElement("audio");
     audio[i].src = source[i];
     audio[i].pause();
+  }
 
   var hoverfunc = function(){
     audio[Math.random()*10].play();
