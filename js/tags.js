@@ -73,5 +73,3 @@ if(query.lang == "scottish")
 
   document.getElementById("name").onmouseover = hoverfunc;
 }
-
-}
