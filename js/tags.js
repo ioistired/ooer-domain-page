@@ -28,7 +28,7 @@ if(query.lang == "scottish")
   head.appendChild(link);
 
   var audio = document.createElement("audio");
-  audio.src = "/onLoadLoop.mp3";
+  audio.src = "/scot.mp3";
   audio.loop = true;
   audio.play();
 }
