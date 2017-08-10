@@ -15,7 +15,7 @@ function parseQuery(q)
   return stage3;
 }
 
-var query = parseQuery(window.location.search);
+var query = parseQuery(window.location.hash);
 
 if(query.lang == "scottish")
 {
