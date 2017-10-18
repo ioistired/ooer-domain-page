@@ -75,6 +75,11 @@ if(query.lang == "scottish")
     audio[Math.floor(Math.random()*12)].play();
   };
 
-  document.getElementById("first").onmouseover = hoverfunc;
+  var list = document.getElementsByTagName("a");
+  for(var i=0;i<list.length;++i)
+  {
+  list[i].onmouseover = hoverfunc;
+  }
+
 }
 
