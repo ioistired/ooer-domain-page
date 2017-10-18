@@ -1,7 +1,7 @@
 body
 {
 	background-image: url("/img/lang/USbg.png") !important;
-	cursor: url('/img/lang/burrito.png'), auto !important;
+	cursor: url('/img/lang/burrito.png'), auto
 }
 
 @-webkit-keyframes fadeIn {
