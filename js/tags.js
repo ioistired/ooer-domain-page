@@ -60,7 +60,9 @@ if(query.lang == "scottish")
   source[7] = "audio/lang/USBrother/Brother8.mp3";
   source[8] = "audio/lang/USBrother/Brother9.mp3";
   source[9] = "audio/lang/USBrother/Brother10.mp3";
-  
+  source[10] = "audio/lang/USBrother/Brother11.mp3";
+  source[11] = "audio/lang/USBrother/Brother12.mp3";
+  source[12] = "audio/lang/USBrother/Brother13.mp3";
   var audio = [];
   for(var i=0;i<10;++i)
   {
@@ -70,7 +72,7 @@ if(query.lang == "scottish")
   }
 
   var hoverfunc = function(){
-    audio[Math.random()*10].play();
+    audio[Math.floor(Math.random()*13)].play();
   };
 
   document.getElementById("first").onmouseover = hoverfunc;
