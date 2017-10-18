@@ -50,16 +50,16 @@ if(query.lang == "scottish")
   div.innerHTML = '<img src="/img/lang/USFlag.png" id="ImageOverlay">'
   document.body.appendChild(div);
   var source = [];
-  source[0] = "audio/lang/USBrother/Brother1";
-  source[1] = "audio/lang/USBrother/Brother2";
-  source[2] = "audio/lang/USBrother/Brother3";
-  source[3] = "audio/lang/USBrother/Brother4";
-  source[4] = "audio/lang/USBrother/Brother5";
-  source[5] = "audio/lang/USBrother/Brother6";
-  source[6] = "audio/lang/USBrother/Brother7";
-  source[7] = "audio/lang/USBrother/Brother8";
-  source[8] = "audio/lang/USBrother/Brother9";
-  source[9] = "audio/lang/USBrother/Brother10";
+  source[0] = "audio/lang/USBrother/Brother1.mp3";
+  source[1] = "audio/lang/USBrother/Brother2.mp3";
+  source[2] = "audio/lang/USBrother/Brother3.mp3";
+  source[3] = "audio/lang/USBrother/Brother4.mp3";
+  source[4] = "audio/lang/USBrother/Brother5.mp3";
+  source[5] = "audio/lang/USBrother/Brother6.mp3";
+  source[6] = "audio/lang/USBrother/Brother7.mp3";
+  source[7] = "audio/lang/USBrother/Brother8.mp3";
+  source[8] = "audio/lang/USBrother/Brother9.mp3";
+  source[9] = "audio/lang/USBrother/Brother10.mp3";
   
   var audio = [];
   for(var i=0;i<10;++i)
