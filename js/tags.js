@@ -1,4 +1,4 @@
-var audio = undefined;
+//var audio = undefined;
 
 function parseQuery(q)
 {
@@ -71,7 +71,7 @@ if(query.lang == "scottish")
 
   var hoverfunc = function(){
     audio[Math.random()*10].play();
-  }
+  };
 
   document.getElementById("first").onmouseover = hoverfunc;
 }
