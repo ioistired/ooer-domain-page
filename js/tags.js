@@ -71,9 +71,25 @@ if(query.lang == "scottish")
     audio[i].pause();
   }
 
-  var hoverfunc = function(){
-    audio[Math.floor(Math.random()*12)].play();
-  };
+var hoverlist = {};
+  
+  var hoverfunc = function(e){
+var oldhover = hoverlist[this.id];
+if(oldhover)
+{
+oldhover();
+}
+
+audio[Math.floor(Math.random()*12)].play();
+  }
+  
+  var list = document.getElementsByTagName("a");
+  for(var i=0;i<list.length;++i)
+  {
+  hoverlist[list[i].id] = list[i].onmouseover;
+  list[i].onmouseover = hoverfunc;
+  }
+
 
   var list = document.getElementsByTagName("a");
   for(var i=0;i<list.length;++i)
