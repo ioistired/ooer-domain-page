@@ -1,4 +1,4 @@
-//var audio = undefined;
+var audio = undefined;
 
 function parseQuery(q)
 {
