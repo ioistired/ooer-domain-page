@@ -64,7 +64,7 @@ if(query.lang == "scottish")
   source[11] = "audio/lang/USBrother/Brother12.mp3";
   source[12] = "audio/lang/USBrother/Brother13.mp3";
   var audio = [];
-  for(var i=0;i<13;++i)
+  for(var i=0;i<12;++i)
   {
     audio[i] = document.createElement("audio");
     audio[i].src = source[i];
