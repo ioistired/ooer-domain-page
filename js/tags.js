@@ -72,7 +72,7 @@ if(query.lang == "scottish")
   }
 
   var hoverfunc = function(){
-    audio[Math.floor(Math.random()*13)].play();
+    audio[Math.floor(Math.random()*12)].play();
   };
 
   document.getElementById("first").onmouseover = hoverfunc;
