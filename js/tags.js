@@ -33,7 +33,7 @@ if(query.lang == "scottish")
   audio.play();
   
   var div = document.createElement("div");
-  div.innerHTML = '<img src="/img/Scotland Forever.png" id="ImageOverlay">'
+  div.innerHTML = '<img src="/img/lang/SCOTFlag.png" id="ImageOverlay">'
   document.body.appendChild(div);
 }
   else if(query.lang == "us")
@@ -46,6 +46,9 @@ if(query.lang == "scottish")
   link.media = 'all';
   head.appendChild(link);
 
+  var div = document.createElement("div");
+  div.innerHTML = '<img src="/img/lang/USFlag.png" id="ImageOverlay">'
+  document.body.appendChild(div);
   var source = [];
   source[0] = "";
   source[1] = "";
@@ -57,7 +60,7 @@ if(query.lang == "scottish")
   source[7] = "";
   source[8] = "";
   source[9] = "";
-
+  
   var audio = [];
   for(var i=0;i<10;++i)
   {
