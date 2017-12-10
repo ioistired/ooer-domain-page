@@ -97,6 +97,8 @@ audio[Math.floor(Math.random()*12)].play();
   {
   list[i].onmouseover = hoverfunc;
   }
-
+   else if(query.lang == "UK")
+  {
+  }
 }
 
