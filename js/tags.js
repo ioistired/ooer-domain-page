@@ -37,6 +37,9 @@ if(query.lang == "scottish")
   div.innerHTML = '<img src="/img/lang/SCOTFlag.png" id="ImageOverlay">'
   document.body.appendChild(div);
 }
+  else if(query.lang == "uk")
+{
+}
   else if(query.lang == "us")
 {
   var head  = document.getElementsByTagName('head')[0];
