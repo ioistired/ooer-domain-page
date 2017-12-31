@@ -231,9 +231,8 @@ h1, h2
 	text-align: center;
 	animation: Bepis .15s linear 0s infinite
 }
-h1:hover
-{
-	animation: coolspin .10s linear 0s infinite;
+#spinny:hover h1{
+animation: coolspin .10s linear 0s infinite;
 }
 
 /* buttons */
