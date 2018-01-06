@@ -9,7 +9,7 @@ function endstatic()
 {
   document.body.style.backgroundImage = "none";
   document.body.style.backgroundColor = "black";
-  
+
 //  staticsound.pause();
 }
 
@@ -56,10 +56,10 @@ function reset()
 
   video.currentTime = 0;
   video.pause();
-  
+
   tapesound.currentTime = 0;
   tapesound.pause();
-  
+
  // staticsound.play();
 
   var string = "/img/tiled static.gif";
@@ -77,14 +77,14 @@ window.onload = function()
   tapesound = document.createElement("audio");
   tapesound.src = "/tapefeed.mp3";
   tapesound.pause();
-  
+
 //  staticsound = document.createElement("audio");
 //  staticsound.src = "";
 //  staticsound.loop = true;
 //  staticsound.play();
 
   video = document.createElement("video");
-  video.src = "https://github.com/bmintz/ooer-domain-page/blob/gh-pages/Testing%20video.mp4?raw=true";
+  video.src = "https://github.com/bmintz/ooer-domain-page/blob/gh-pages/video/Testing%20video.mp4?raw=true";
   video.pause();
   video.addEventListener('play',function(){
         videoloop();
@@ -95,10 +95,10 @@ window.onload = function()
 
   canvas = document.getElementById("canvas");
   context = canvas.getContext("2d");
-  
+
   canvas.width = canvas.clientWidth;
   canvas.height = canvas.clientHeight;
-  
+
   context.clearRect(0, 0, canvas.width, canvas.height);
 }
 
