@@ -84,7 +84,7 @@ window.onload = function()
 //	staticsound.play();
 
 	video = document.createElement("video");
-	video.src = "https://github.com/bmintz/ooer-domain-page/blob/gh-pages/video/Testing%20video.mp4?raw=true";
+	video.src = "http://oman.imjake.me/About.mp4";
 	video.pause();
 	video.addEventListener('play',function(){
 		videoloop();
