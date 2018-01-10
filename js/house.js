@@ -3,7 +3,7 @@ var play = undefined;
 var video = undefined;
 var canvas = undefined;
 var tapesound = undefined;
-// var staticsound = undefined;
+var staticsound = undefined;
 
 function endstatic()
 {
@@ -60,7 +60,7 @@ function reset()
 	tapesound.currentTime = 0;
 	tapesound.pause();
 
- // staticsound.play();
+ 	staticsound.play();
 
 	var string = "/img/tiled static.gif";
 	document.body.style.backgroundImage = "url('" + string + "')";
@@ -78,13 +78,13 @@ window.onload = function()
 	tapesound.src = "/tapefeed.mp3";
 	tapesound.pause();
 
-//	staticsound = document.createElement("audio");
-//	staticsound.src = "";
-//	staticsound.loop = true;
-//	staticsound.play();
+	staticsound = document.createElement("audio");
+	staticsound.src = "https://omaniamnotgoodwith.computer/audio/OurMoreMuffledHouse.mp3";
+	staticsound.loop = true;
+	staticsound.play();
 
 	video = document.createElement("video");
-	video.src = "http://oman.imjake.me/OurHouse.mp4";
+	video.src = "https://oman.imjake.me/OurHouse.mp4";
 	video.pause();
 	video.addEventListener('play',function(){
 		videoloop();
