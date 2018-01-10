@@ -10,7 +10,7 @@ function endstatic()
 	document.body.style.backgroundImage = "none";
 	document.body.style.backgroundColor = "black";
 
-//	staticsound.pause();
+	staticsound.pause();
 }
 
 function videoloop()
