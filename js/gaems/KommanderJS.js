@@ -13,13 +13,13 @@ for(var i=0; i<num; ++i)
 image[i] = new Image();
   if(i<((num/100)*30))
   {
-    image[i].src = "img/gaems/kommander/star.gif";
+    image[i].src = "https://omaniamnotgoodwith.computer/img/gaems/kommander/star.gif";
     div2.speed = (5 + Math.round(Math.random())*10);
     div2.type = 10;
   }
   else
   {
-    image[i].src = "img/gaems/kommander/star2.gif";
+    image[i].src = "https://omaniamnotgoodwith.computer/img/gaems/kommander/star2.gif";
     div2.speed = (5 + Math.round(Math.random())*5);
     div2.type = 5;
   }
