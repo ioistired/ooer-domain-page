@@ -63,3 +63,4 @@ var movefunc = function()
 }
 
 window.setInterval(movefunc, 20);
+}
