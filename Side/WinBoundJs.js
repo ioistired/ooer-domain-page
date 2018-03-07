@@ -1,8 +1,3 @@
-    	function New_open_win()
-        {
-          Qwek=window.open("https://omaniamnotgoodwith.computer/side/WindowPullAlt","datshizzle","location=0,status=1,width=700,height=500");
-          Qwek.focus()
-        }
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var w = canvas.width;
@@ -14,7 +9,12 @@
     
     ctx.fillStyle = "skyblue";
     ctx.strokeStyle = "lightgray";
-    
+
+    function New_open_win()
+    {
+    Qwek2=window.open("https://omaniamnotgoodwith.computer/side/WindowPullAlt","datshizzle","location=0,status=1,width=700,height=500");
+    Qwek2.focus()
+    }
     function draw(x, y) {
         ctx.clearRect(0, 0, w, h);
         ctx.save();
@@ -59,9 +59,9 @@
             // draw
             draw(newX, newY);
             console.log(newX);
-	          console.log(newY);
-	          Qwek.moveTo(500, 100);
-		          Qwek.focus()
+	    console.log(newY);
+	    Qwek2.moveTo(newX, newY);
+            Qwek2.focus()
     
             // draw the centerpoint 
             ctx.beginPath();
