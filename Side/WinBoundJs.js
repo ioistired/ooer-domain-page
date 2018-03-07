@@ -5,7 +5,7 @@
     var angle = 3 * Math.PI / 180;
     var cx = 200;
     var cy = 75;
-    var radius = 40;
+    var radius = 60;
     
     ctx.fillStyle = "skyblue";
     ctx.strokeStyle = "lightgray";
@@ -51,7 +51,7 @@
             requestAnimationFrame(animate);
     
             // increase the angle of rotation
-            angle += 3 * Math.PI / 180;
+            angle += 3 * Math.PI / 180 * 4;
     
             // calculate the new ball.x / ball.y
             var newX = cx + radius * Math.cos(angle) + 200;
