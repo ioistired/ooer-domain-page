@@ -54,8 +54,8 @@
             angle += 3 * Math.PI / 180;
     
             // calculate the new ball.x / ball.y
-            var newX = cx + radius * Math.cos(angle) + 400;
-            var newY = cy + radius * Math.sin(angle) + 400;
+            var newX = cx + radius * Math.cos(angle) + 200;
+            var newY = cy + radius * Math.sin(angle) + 200;
             // draw
             draw(newX, newY);
             console.log(newX);
