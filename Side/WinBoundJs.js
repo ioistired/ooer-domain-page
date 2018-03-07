@@ -1,3 +1,8 @@
+    	function New_open_win()
+        {
+          Qwek=window.open("https://omaniamnotgoodwith.computer/side/WindowPullAlt","datshizzle","location=0,status=1,width=700,height=500");
+          Qwek.focus()
+        }
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var w = canvas.width;
@@ -56,6 +61,7 @@
             console.log(newX);
 	          console.log(newY);
 	          Qwek.moveTo(500, 100);
+		          Qwek.focus()
     
             // draw the centerpoint 
             ctx.beginPath();
