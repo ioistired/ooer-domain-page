@@ -61,7 +61,7 @@
             console.log(newX);
 	    console.log(newY);
 	    Qwek2.moveTo(newX, newY);
-	    Qwek2.resizeTo(newX, newY);
+	    Qwek2.resizeTo(newX * 2, newY * 2);
             Qwek2.focus()
             // draw the centerpoint 
             ctx.beginPath();
