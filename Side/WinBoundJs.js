@@ -60,7 +60,8 @@
             draw(newX, newY);
             console.log(newX);
 	    console.log(newY);
-	    Qwek2.moveTo(newX, newY);
+//	    Qwek2.moveTo(newX, newY);
+	    Qwek2.resizeTo(newX, newY);
             Qwek2.focus()
     
             // draw the centerpoint 
