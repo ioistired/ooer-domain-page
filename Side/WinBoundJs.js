@@ -61,11 +61,8 @@
             console.log(newX);
 	    console.log(newY);
 	    Qwek2.moveTo(newX, newY);
-//	    Qwek2.resizeTo(newX, newY);
+	    Qwek2.resizeTo(newX, newY);
             Qwek2.focus()
-	    document.getElementById("iframe").width = "newX + 400";
-	    document.getElementById("iframe").height = "newY + 400";
-    
             // draw the centerpoint 
             ctx.beginPath();
             ctx.arc(cx, cy, radius, 0, Math.PI * 2, false);
