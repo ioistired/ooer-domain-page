@@ -29,17 +29,21 @@
 </head>
 <body>
   <div class="kettle">
-    <img onmouseover="aaa" onmouseout="noaaa" src="https://i.imgur.com/gTF0R0i.gif" alt="oman blind supppport">
+    <img onmouseover="aaa('thescreaming')" onmouseout="noaaa('thescreaming')" src="https://i.imgur.com/gTF0R0i.gif" alt="oman blind supppport">
     <p>*screaming*.</p>
   </div>
+  <audio id='thescreaming' src='http://oman.imjake.me/Coffee.mp3'/>
   <script>
-  function aaa {
-  var audio = new Audio('http://oman.imjake.me/Coffee.mp3');
-  audio.play();
-  }
-  function noaaa {
-  audio.stop();
-  }
+  function aaa(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function noaaa(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
   </script>
 </body>
 </html>
