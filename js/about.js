@@ -17,7 +17,7 @@ function videoloop()
 {
 		if (video && !video.paused && !video.ended) {
 				context.drawImage(video, 0, 0, canvas.width, canvas.height);
-				setTimeout(videoloop, 1000 / 30);
+				setTimeout(videoloop, 1000 / 60);
 		}
 }
 
