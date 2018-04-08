@@ -3,42 +3,34 @@ var play = undefined;
 var video = undefined;
 var canvas = undefined;
 var tapesound = undefined;
-// var staticsound = undefined;
 
-function endstatic()
-{
+
+function endstatic() {
 	document.body.style.backgroundImage = "none";
 	document.body.style.backgroundColor = "black";
-
-//	staticsound.pause();
 }
 
-function videoloop()
-{
+function videoloop() {
 		if (video && !video.paused && !video.ended) {
 				context.drawImage(video, 0, 0, canvas.width, canvas.height);
 				setTimeout(videoloop, 1000 / 60);
 		}
 }
 
-function startvid()
-{
+function startvid() {
 	canvas.style.display = "inline";
 	video.play();
 }
 
-function playoff()
-{
+function playoff() {
 	play.style.display = "none";
 }
 
-function startsound()
-{
+function startsound() {
 	tapesound.play();
 }
 
-function onplay(e)
-{
+function onplay(e) {
 	pause.style.display = "none";
 	play.style.display = "inline";
 
@@ -48,8 +40,7 @@ function onplay(e)
 	setTimeout(startsound, 1000);
 }
 
-function reset()
-{
+function reset() {
 	pause.style.display = "inline";
 	play.style.display = "none";
 	canvas.style.display = "none";
@@ -60,15 +51,12 @@ function reset()
 	tapesound.currentTime = 0;
 	tapesound.pause();
 
- // staticsound.play();
-
 	var string = "/img/tiled static.gif";
 	document.body.style.backgroundImage = "url('" + string + "')";
 	document.body.style.backgroundColor = "white";
 }
 
-window.onload = function()
-{
+window.onload = function() {
 	pause = document.getElementById("pause");
 	play = document.getElementById("play");
 	console.log("load successed");
@@ -78,20 +66,11 @@ window.onload = function()
 	tapesound.src = "/tapefeed.mp3";
 	tapesound.pause();
 
-//	staticsound = document.createElement("audio");
-//	staticsound.src = "";
-//	staticsound.loop = true;
-//	staticsound.play();
-
 	video = document.createElement("video");
 	video.src = "http://oman.imjake.me/About.mp4";
 	video.pause();
-	video.addEventListener('play',function(){
-		videoloop();
-	},false);
-	video.addEventListener('ended',function(){
-		reset();
-	},false);
+	video.addEventListener('play', videoloop, false);
+	video.addEventListener('ended', reset, false);
 
 	canvas = document.getElementById("canvas");
 	context = canvas.getContext("2d");
