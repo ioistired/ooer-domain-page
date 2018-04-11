@@ -84,7 +84,7 @@ window.onload = function()
 //	staticsound.play();
 
 	video = document.createElement("video");
-	video.src = "http://oman.imjake.me/About.mp4";
+	video.src = "https://oman.imjake.me/About.mp4";
 	video.pause();
 	video.addEventListener('play',function(){
 		videoloop();
