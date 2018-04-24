@@ -11,6 +11,15 @@
 		<meta name="application-name" content="OMAN I AM NOT GOOD WITH COMPUTER PLZ TO HELP">
 		<meta name="theme-color" content="#ffffff">
 		<title lang=en>OMMAN 15BIT</title>
+		<script>var text = "Start! Начало! Début! Anfang!";
+			for(var i in text) { 
+			  if(text[i] === " ") {
+			    $(".wavetext").append( $("<span>").html("&nbsp;") ); 
+			  } else {  
+			    $(".wavetext").append( $("<span>").text(text[i]) ); 
+			  }
+			}
+		</script>
 		<style>@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 			body { background-color : black; 
 			font-family: 'Press Start 2P', cursive;}
@@ -59,23 +68,26 @@
 			z-index: -100;
 			pointer-events:none;
 			}
-      video {
-      object-fit: fill;
-      }
+			video {
+			object-fit: fill;
+			width:96%;
+			height:96%;
+			position:absolute;
+			left:2%;
+			top:3%;
+			}
 		</style>
 	</head>
 	<body>
-		<img src="/img/Overlay2.png" id="ImageOverlay">
-		<div class="wavetext"></div>
-		<script>var text = "Start! Начало! Début! Anfang!";
-			for(var i in text) { 
-			  if(text[i] === " ") {
-			    $(".wavetext").append( $("<span>").html("&nbsp;") ); 
-			  } else {  
-			    $(".wavetext").append( $("<span>").text(text[i]) ); 
-			  }
-			}
-		</script>
-		<canvas id="canvas" width="100%" height="100%" ><video height="100%" width="100%" loop="" name="media" autoplay=""><source src="http://oman.imjake.me/My%20eardrums%20are%20perforated%20now.mp4" type="video/mp4"></video></canvas>
+		<div>
+			<video height="100%" width="100%" loop="" name="media" autoplay="">
+				<source src="http://oman.imjake.me/My%20eardrums%20are%20perforated%20now.mp4" type="video/mp4">
+			</video>
+			<img src="/img/Overlay2.png" id="ImageOverlay">
+			<div class="wavetext"></div>
+		</div>
+		<canvas id="canvas" width="100%" height="100%">
+			<div></div>
+		</canvas>
 	</body>
 </html>
