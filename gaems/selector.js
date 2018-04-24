@@ -1,4 +1,4 @@
-var text = "Start! Начало! Début! Anfang!";
+var text = "Click Start button!! Нажмите кнопку Пуск! Cliquez sur le bouton Démarrer! Klicken den Startknopf!";
 
 for(var i in text) { 
   if(text[i] === " ") {
