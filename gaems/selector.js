@@ -1,4 +1,4 @@
-var text = "Start! Начало! Début! Anfang!";
+var text = "Push start!";
 
 for(var i in text) { 
   if(text[i] === " ") {
