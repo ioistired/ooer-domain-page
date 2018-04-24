@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en" >
 	<head>
 		<meta charset=UTF-8>
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -11,44 +11,196 @@
 		<meta name="application-name" content="OMAN I AM NOT GOOD WITH COMPUTER PLZ TO HELP">
 		<meta name="theme-color" content="#ffffff">
 		<title lang=en>OMMAN 15BIT</title>
-		<script>var text = "Start! Начало! Début! Anfang!";
-			for(var i in text) { 
-			  if(text[i] === " ") {
-			    $(".wavetext").append( $("<span>").html("&nbsp;") ); 
-			  } else {  
-			    $(".wavetext").append( $("<span>").text(text[i]) ); 
-			  }
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+			body {
+			background-color: black;
+			font-family: 'Press Start 2P', cursive;
 			}
-		</script>
-		<style>@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-			body { background-color : black; 
-			font-family: 'Press Start 2P', cursive;}
-			$offset : -90px;
-			$count : 40;
-			$duration : 0.3;
 			@keyframes wave {
-			from { transform : translateY(0); color: white; }
-			to   { transform : translateY( $offset ); }
+			from {
+			transform: translateY(0);
+			color: white;
 			}
-			.wavetext {
-			margin-top : 10em;
-			text-align : center;
+			to {
+			transform: translateY(-90px);
+			}
+			}
+			.wavetext {position: fixed;
+			top: 50%;
+			left: 50%;
+			/* bring your own prefixes */
+			transform: translate(-50%, -50%);
+			text-align: center;
 			}
 			.wavetext span {
 			display: inline-block;
 			font-family: 'Press Start 2P', cursive;
-			font-size : 6em;
-			animation-duration: #{$duration}s;
+			font-size: 6em;
+			animation-duration: 0.3s;
 			animation-name: wave;
 			animation-iteration-count: infinite;
 			animation-direction: alternate;
 			}
-			@for $i from 0 to $count {
-			.wavetext :nth-child( #{$count}n + #{$i} ) {
-			animation-delay : 
-			-#{($count - $i) * 2 * $duration / $count }s;
-			color: rgba(100+$i * 20 % 155, 10, 100+ $i * 40 % 55, 1);
+			.wavetext :nth-child(40n + 0) {
+			animation-delay: -0.6s;
+			color: #640a64;
 			}
+			.wavetext :nth-child(40n + 1) {
+			animation-delay: -0.585s;
+			color: #780a8c;
+			}
+			.wavetext :nth-child(40n + 2) {
+			animation-delay: -0.57s;
+			color: #8c0a7d;
+			}
+			.wavetext :nth-child(40n + 3) {
+			animation-delay: -0.555s;
+			color: #a00a6e;
+			}
+			.wavetext :nth-child(40n + 4) {
+			animation-delay: -0.54s;
+			color: #b40a96;
+			}
+			.wavetext :nth-child(40n + 5) {
+			animation-delay: -0.525s;
+			color: #c80a87;
+			}
+			.wavetext :nth-child(40n + 6) {
+			animation-delay: -0.51s;
+			color: #dc0a78;
+			}
+			.wavetext :nth-child(40n + 7) {
+			animation-delay: -0.495s;
+			color: #f00a69;
+			}
+			.wavetext :nth-child(40n + 8) {
+			animation-delay: -0.48s;
+			color: #690a91;
+			}
+			.wavetext :nth-child(40n + 9) {
+			animation-delay: -0.465s;
+			color: #7d0a82;
+			}
+			.wavetext :nth-child(40n + 10) {
+			animation-delay: -0.45s;
+			color: #910a73;
+			}
+			.wavetext :nth-child(40n + 11) {
+			animation-delay: -0.435s;
+			color: #a50a64;
+			}
+			.wavetext :nth-child(40n + 12) {
+			animation-delay: -0.42s;
+			color: #b90a8c;
+			}
+			.wavetext :nth-child(40n + 13) {
+			animation-delay: -0.405s;
+			color: #cd0a7d;
+			}
+			.wavetext :nth-child(40n + 14) {
+			animation-delay: -0.39s;
+			color: #e10a6e;
+			}
+			.wavetext :nth-child(40n + 15) {
+			animation-delay: -0.375s;
+			color: #f50a96;
+			}
+			.wavetext :nth-child(40n + 16) {
+			animation-delay: -0.36s;
+			color: #6e0a87;
+			}
+			.wavetext :nth-child(40n + 17) {
+			animation-delay: -0.345s;
+			color: #820a78;
+			}
+			.wavetext :nth-child(40n + 18) {
+			animation-delay: -0.33s;
+			color: #960a69;
+			}
+			.wavetext :nth-child(40n + 19) {
+			animation-delay: -0.315s;
+			color: #aa0a91;
+			}
+			.wavetext :nth-child(40n + 20) {
+			animation-delay: -0.3s;
+			color: #be0a82;
+			}
+			.wavetext :nth-child(40n + 21) {
+			animation-delay: -0.285s;
+			color: #d20a73;
+			}
+			.wavetext :nth-child(40n + 22) {
+			animation-delay: -0.27s;
+			color: #e60a64;
+			}
+			.wavetext :nth-child(40n + 23) {
+			animation-delay: -0.255s;
+			color: #fa0a8c;
+			}
+			.wavetext :nth-child(40n + 24) {
+			animation-delay: -0.24s;
+			color: #730a7d;
+			}
+			.wavetext :nth-child(40n + 25) {
+			animation-delay: -0.225s;
+			color: #870a6e;
+			}
+			.wavetext :nth-child(40n + 26) {
+			animation-delay: -0.21s;
+			color: #9b0a96;
+			}
+			.wavetext :nth-child(40n + 27) {
+			animation-delay: -0.195s;
+			color: #af0a87;
+			}
+			.wavetext :nth-child(40n + 28) {
+			animation-delay: -0.18s;
+			color: #c30a78;
+			}
+			.wavetext :nth-child(40n + 29) {
+			animation-delay: -0.165s;
+			color: #d70a69;
+			}
+			.wavetext :nth-child(40n + 30) {
+			animation-delay: -0.15s;
+			color: #eb0a91;
+			}
+			.wavetext :nth-child(40n + 31) {
+			animation-delay: -0.135s;
+			color: #640a82;
+			}
+			.wavetext :nth-child(40n + 32) {
+			animation-delay: -0.12s;
+			color: #780a73;
+			}
+			.wavetext :nth-child(40n + 33) {
+			animation-delay: -0.105s;
+			color: #8c0a64;
+			}
+			.wavetext :nth-child(40n + 34) {
+			animation-delay: -0.09s;
+			color: #a00a8c;
+			}
+			.wavetext :nth-child(40n + 35) {
+			animation-delay: -0.075s;
+			color: #b40a7d;
+			}
+			.wavetext :nth-child(40n + 36) {
+			animation-delay: -0.06s;
+			color: #c80a6e;
+			}
+			.wavetext :nth-child(40n + 37) {
+			animation-delay: -0.045s;
+			color: #dc0a96;
+			}
+			.wavetext :nth-child(40n + 38) {
+			animation-delay: -0.03s;
+			color: #f00a87;
+			}
+			.wavetext :nth-child(40n + 39) {
+			animation-delay: -0.015s;
+			color: #690a78;
 			}
 			#ImageOverlay  {
 			width:100%;
@@ -77,17 +229,24 @@
 			top:3%;
 			}
 		</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	</head>
 	<body>
-		<div>
-			<video height="100%" width="100%" loop="" name="media" autoplay="">
-				<source src="http://oman.imjake.me/My%20eardrums%20are%20perforated%20now.mp4" type="video/mp4">
-			</video>
-			<img src="/img/Overlay2.png" id="ImageOverlay">
-			<div class="wavetext"></div>
-		</div>
-		<canvas id="canvas" width="100%" height="100%">
-			<div></div>
-		</canvas>
+		</head>
+		<body>
+			<div>
+				<video height="100%" width="100%" loop="" name="media" autoplay="">
+					<source src="http://oman.imjake.me/My%20eardrums%20are%20perforated%20now.mp4" type="video/mp4">
+				</video>
+				<img src="/img/Overlay2.png" id="ImageOverlay">
+				<div class="wavetext"></div>
+			</div>
+			<canvas id="canvas" width="100%" height="100%">
+				<div></div>
+			</canvas>
 	</body>
+</html>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="selector.js"></script>
+</body>
 </html>
