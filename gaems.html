@@ -45,8 +45,6 @@
 			.wavyinbound {
 				top: 50%;
 				transform:scale(0), translate(-50%, -50%);  animation:animatezoom 0.6s; animation-delay: 3s; animation-fill-mode:forwards; }@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}
-				position: absolute;
-				width:100%;
 			}
 			.wavetext :nth-child(40n + 0) {
 			animation-delay: -0.6s;
@@ -245,7 +243,7 @@
 					<source src="https://oman.imjake.me/My%20eardrums%20are%20perforated%20now.mp4" type="video/mp4">
 				</video>
 				<img src="/img/Overlay2.png" id="ImageOverlay">
-				<div class="wavyinbound">
+				<div class="wavyinbound" style="position: absolute; width:100%;">
 					<div class="wavetext"></div>
 				</div>
 			</div>
