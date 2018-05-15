@@ -100,8 +100,8 @@ window.onload = function()
 	canvas = document.getElementById("canvas");
 	context = canvas.getContext("2d");
 
-//	canvas.width = canvas.clientWidth;
-//	canvas.height = canvas.clientHeight;
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerWidth;
 
 	context.clearRect(0, 0, canvas.width, canvas.height);
 }
