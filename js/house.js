@@ -4,8 +4,6 @@ var video = undefined;
 var canvas = undefined;
 var tapesound = undefined;
 var staticsound = undefined;
-var TopHouse = document.getElementById("TopHouse");
-var Sky = document.getElementById("Sky");
 
 function endstatic()
 {
@@ -47,6 +45,8 @@ function onplay(e)
 {
 	pause.style.display = "none";
 	play.style.display = "inline";
+	var TopHouse = document.getElementById("TopHouse");
+	var Sky = document.getElementById("Sky");
    	Sky.classList.add("wakethefup");
    	TopHouse.classList.add("wakethefup");
 	TopHouse.classList.add("hmmyesthisfloorismade");
