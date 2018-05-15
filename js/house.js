@@ -43,7 +43,8 @@ function onplay(e)
 	play.style.display = "inline";
 	var Sky = document.getElementById("Sky");
    	Sky.classList.add("wakethefup");
-   
+   	var TopHouse = document.getElementById("TopHouse");
+   	TopHouse.classList.add("wakethefup");
 	setTimeout(playoff, 7000);
 	setTimeout(startvid, 5000);
 	setTimeout(endstatic, 2000);
