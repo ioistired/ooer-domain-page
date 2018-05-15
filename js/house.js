@@ -41,7 +41,9 @@ function onplay(e)
 {
 	pause.style.display = "none";
 	play.style.display = "inline";
-
+	var Sky = document.getElementById("Sky");
+   	Sky.classList.add("wakethefup");
+   
 	setTimeout(playoff, 7000);
 	setTimeout(startvid, 5000);
 	setTimeout(endstatic, 2000);
