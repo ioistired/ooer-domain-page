@@ -33,7 +33,7 @@ function playoff()
 {
 	play.style.display = "none";
 }
-function houseaway();
+function houseaway()
 {
 Sky.style.display = "none";
 Tophouse.style.display = "none";
