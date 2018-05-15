@@ -4,6 +4,8 @@ var video = undefined;
 var canvas = undefined;
 var tapesound = undefined;
 var staticsound = undefined;
+var TopHouse = document.getElementById("TopHouse");
+var Sky = document.getElementById("Sky");
 
 function endstatic()
 {
@@ -31,7 +33,11 @@ function playoff()
 {
 	play.style.display = "none";
 }
-
+function houseaway();
+{
+Sky.style.display = "none";
+Tophouse.style.display = "none";
+}
 function startsound()
 {
 	tapesound.play();
@@ -41,12 +47,11 @@ function onplay(e)
 {
 	pause.style.display = "none";
 	play.style.display = "inline";
-	var Sky = document.getElementById("Sky");
    	Sky.classList.add("wakethefup");
-   	var TopHouse = document.getElementById("TopHouse");
    	TopHouse.classList.add("wakethefup");
 	TopHouse.classList.add("hmmyesthisfloorismade");
 	setTimeout(playoff, 7000);
+	setTimeout(houseaway, 12000);
 	setTimeout(startvid, 5000);
 	setTimeout(endstatic, 2000);
 	setTimeout(startsound, 1000);
