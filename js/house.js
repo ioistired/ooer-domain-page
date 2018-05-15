@@ -45,6 +45,7 @@ function onplay(e)
    	Sky.classList.add("wakethefup");
    	var TopHouse = document.getElementById("TopHouse");
    	TopHouse.classList.add("wakethefup");
+	TopHouse.classList.add("hmmyesthisfloorismade");
 	setTimeout(playoff, 7000);
 	setTimeout(startvid, 5000);
 	setTimeout(endstatic, 2000);
