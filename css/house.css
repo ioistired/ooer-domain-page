@@ -73,6 +73,11 @@ body {
      top:0;
      z-index: 106;
      pointer-events:none;
+     filter: saturate(60%) brightness(60%);
+}
+#TopHouse.wakethefup { 
+transition: 4.8s -webkit-filter linear;
+filter: saturate(100%) brightness(100%);
 }
  #Sky {
      width:200%;
