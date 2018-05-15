@@ -33,8 +33,6 @@ function playoff()
 }
 function houseaway()
 {
-var TopHouse = document.getElementById("TopHouse");
-var Sky = document.getElementById("Sky");
 Sky.style.display = "none";
 TopHouse.style.display = "none";
 }
