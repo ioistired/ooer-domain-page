@@ -88,6 +88,13 @@ body {
      z-index: 100;
      pointer-events:none;
 }
+#Door {
+	width:4.8%;
+     height:18.1%;
+     left:35%;
+     top:63.6%;
+          z-index: 110;
+     position:absolute;}
 /*Zoom and door trans */
 #TopHouse.hmmyesthisfloorismade
 {
@@ -95,6 +102,10 @@ transform: translatey(-60%)translateX(35%) scale(3.0);
 transition: transform 3.8s ease-in-out;
 transition-delay: 5.2s
 }
+#Door.hmmyesthisfloorismade 
+{transform: translatey(-80%)translateX(200%) scale(3.0);
+transition: transform 3.8s ease-in-out;
+transition-delay: 5.2s}   
 /* Sky initial trans */
  #Sky.wakethefup {
      -webkit-transition: -webkit-transform 4.8s ease-in-out;
@@ -108,7 +119,7 @@ transition-delay: 5.2s
      -ms-transform: rotate(180deg);
      transform: rotate(180deg);
 }
-#TopHouse.wakethefup { 
+#TopHouse.wakethefup, #Door.wakethefup { 
 	animation-name: riseandshine;
 	animation-duration: 4s;
 	animation-iteration-count: 1;
@@ -116,6 +127,7 @@ transition-delay: 5.2s
 	animation-fill-mode: forwards;
 	animation-delay: 0s;
 }
+
  @keyframes riseandshine {
 	0% {
 		filter: saturate(60%) brightness(40%);
