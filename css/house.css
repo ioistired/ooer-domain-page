@@ -64,11 +64,10 @@ body {
      position: absolute;
      left: 8vw;
      top: 10vh;
-     display: none 
-     z-index: 107;
+     display: none z-index: 107;
 }
 /* Initial holders */
-#TopHouse {
+ #TopHouse {
      width:100%;
      height:100%;
      position:absolute;
@@ -78,7 +77,7 @@ body {
      pointer-events:none;
      filter: saturate(60%) brightness(40%);
 }
-#Sky {
+ #Sky {
      width:200%;
      height:300%;
      position:absolute;
@@ -88,40 +87,42 @@ body {
      z-index: 90;
      pointer-events:none;
 }
-#Door {
-	width:4.8%;
+ #Door {
+     width:4.8%;
      height:18.1%;
      left:35%;
      top:63.6%;
-          z-index: 110;
-	filter: saturate(60%) brightness(40%);
-     position:absolute;}
-/*Zoom and door trans */
-#TopHouse.hmmyesthisfloorismade
-{
-transform: translatey(-60%)translateX(35%) scale(3.0);
-transition: transform 3.8s ease-in-out;
-transition-delay: 5.2s
+     z-index: 110;
+     filter: saturate(60%) brightness(40%);
+     position:absolute;
 }
-#Door.hmmyesthisfloorismade 
-{transform: translatey(-80%)translateX(200%) scale(3.0);
-transition: transform 3.8s ease-in-out;
-transition-delay: 5.2s}   
-#Door.openup {
-	animation-name:  ohshikillthetunes;
-        animation-duration: 2.5s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-out;
-	animation-fill-mode: forwards;
-	animation-delay: 0s; 
-	} 
-#TopHouse.openup {
-	animation-name: didntneedahouseanyway;
-        animation-duration: 2.5s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-out;
-	animation-fill-mode: forwards;
-	animation-delay: 1.25s;} 
+/*Zoom and door trans */
+ #TopHouse.hmmyesthisfloorismade {
+     transform: translatey(-60%)translateX(35%) scale(3.0);
+     transition: transform 3.8s ease-in-out;
+     transition-delay: 5.2s 
+}
+ #Door.hmmyesthisfloorismade {
+    transform: translatey(-80%)translateX(200%) scale(3.0);
+     transition: transform 3.8s ease-in-out;
+     transition-delay: 5.2s
+}
+ #Door.openup {
+     animation-name: ohshikillthetunes;
+     animation-duration: 2.5s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease-out;
+     animation-fill-mode: forwards;
+     animation-delay: 0s;
+}
+ #TopHouse.openup {
+     animation-name: didntneedahouseanyway;
+     animation-duration: 2.5s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease-out;
+     animation-fill-mode: forwards;
+     animation-delay: 1.25s;
+}
 /* Sky initial trans */
  #Sky.wakethefup {
      -webkit-transition: -webkit-transform 4.8s ease-in-out;
@@ -135,24 +136,22 @@ transition-delay: 5.2s}
      -ms-transform: rotate(180deg);
      transform: rotate(180deg);
 }
-#TopHouse.wakethefup, #Door.wakethefup { 
-	animation-name: riseandshine;
-	animation-duration: 4s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-out;
-	animation-fill-mode: forwards;
-	animation-delay: 0s;
+ #TopHouse.wakethefup, #Door.wakethefup {
+     animation-name: riseandshine;
+     animation-duration: 4s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease-out;
+     animation-fill-mode: forwards;
+     animation-delay: 0s;
 }
-
  @keyframes riseandshine {
-	0% {
-		filter: saturate(60%) brightness(40%);
-	}
-	100% {
-		filter: saturate(105%) brightness(135%);
-	}
+     0% {
+         filter: saturate(60%) brightness(40%);
+    }
+     100% {
+         filter: saturate(105%) brightness(135%);
+    }
 }
-
  #canvas {
      width:100%;
      height:100%;
@@ -162,24 +161,31 @@ transition-delay: 5.2s}
      z-index: -100;
      pointer-events:none;
 }
-   @keyframes ohshikillthetunes {
-        0% {
-			transform:skew(0deg, 0deg) translatey(-80%)translateX(200%) scale(3.0);
-        }
-        55% {
-	transform:skew(0deg, -20deg)translatey(-80%) translatex(64%) scaleX(1.3) scaleY(3.1);
-        }
-	   99%{ transform:scale(9) translatex(-154%);}
-        100% {display:none;
-        }
+ @keyframes ohshikillthetunes {
+     0% {
+         transform:skew(0deg, 0deg) translatey(-80%)translateX(200%) scale(3.0);
     }
-   @keyframes didntneedahouseanyway {
-        0% {
-			transform: translatey(-60%) translateX(35%) scale(3.0);
-        }
-        55% {
-        }
-        99%{ transform:scale(49) translatey(-17%) translatex(12%);
-        100% {display:none;
-        }
+     55% {
+         transform:skew(0deg, -20deg)translatey(-80%) translatex(64%) scaleX(1.3) scaleY(3.1);
     }
+     99%{
+         transform:scale(9) translatex(-154%);
+    }
+     100% {
+        display:none;
+    }
+}
+ @keyframes didntneedahouseanyway {
+     0% {
+         transform: translatey(-60%) translateX(35%) scale(3.0);
+    }
+     55% {
+    }
+     99%{
+         transform:scale(49) translatey(-17%) translatex(12%);
+    }
+     100% {
+        display:none;
+    }
+}
+ 
