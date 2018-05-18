@@ -54,7 +54,10 @@ function onplay(e)
 	TopHouse.classList.add("hmmyesthisfloorismade");
 	Door.classList.add("wakethefup");
 	Door.classList.add("hmmyesthisfloorismade");
-	Door.classList.add("openup");
+// Sandboxing door tweens, they will need to be converted to be used alongside other css rules.
+// Apply class at your own risk
+//	Door.classList.add("openup");
+//
 	Door.style.zIndex = "100";
 	setTimeout(playoff, 7000);
 	setTimeout(houseaway, 12000);
