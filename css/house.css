@@ -109,7 +109,7 @@ body {
 }
  #Door.openup {
      animation-name: ohshikillthetunes;
-     animation-duration: 2.5s;
+     animation-duration: 1.5s;
      animation-iteration-count: 1;
      animation-timing-function: ease-out;
      animation-fill-mode: forwards;
@@ -117,7 +117,7 @@ body {
 }
  #TopHouse.openup {
      animation-name: didntneedahouseanyway;
-     animation-duration: 2.5s;
+     animation-duration: 1.5s;
      animation-iteration-count: 1;
      animation-timing-function: ease-out;
      animation-fill-mode: forwards;
@@ -169,7 +169,7 @@ body {
          transform:skew(0deg, -20deg)translatey(-80%) translatex(64%) scaleX(1.3) scaleY(3.1);
     }
      99%{
-         transform:scale(9) translatex(-154%);opacity: 100;
+         transform:scale(9) translatex(-184%);opacity: 100;
     }
      100% {
         display:none;opacity: 0;
