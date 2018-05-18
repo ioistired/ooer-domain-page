@@ -4,6 +4,9 @@ var video = undefined;
 var canvas = undefined;
 var tapesound = undefined;
 var staticsound = undefined;
+var TopHouse = document.getElementById("TopHouse");
+var Sky = document.getElementById("Sky");
+var Door = document.getElementById("Door");
 
 function endstatic()
 {
@@ -46,14 +49,13 @@ function onplay(e)
 {
 	pause.style.display = "none";
 	play.style.display = "inline";
-	var TopHouse = document.getElementById("TopHouse");
-	var Sky = document.getElementById("Sky");
-	var Door = document.getElementById("Door");
    	Sky.classList.add("wakethefup");
    	TopHouse.classList.add("wakethefup");
 	TopHouse.classList.add("hmmyesthisfloorismade");
 	Door.classList.add("wakethefup");
 	Door.classList.add("hmmyesthisfloorismade");
+	Door.classList.add("openup");
+	Door.style.zIndex = "100";
 	setTimeout(playoff, 7000);
 	setTimeout(houseaway, 12000);
 	setTimeout(startvid, 5000);
