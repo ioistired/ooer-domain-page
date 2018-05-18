@@ -106,6 +106,11 @@ transition-delay: 5.2s
 {transform: translatey(-80%)translateX(200%) scale(3.0);
 transition: transform 3.8s ease-in-out;
 transition-delay: 5.2s}   
+#Door.openup {
+	transform:skew(0deg, -45deg)translatey(-21%) translatex(-36%) scaleX(0.3) scaleY(1.1);
+	transition: transform 2s ease-in-out;
+	transition-delay: 9s
+	} 
 /* Sky initial trans */
  #Sky.wakethefup {
      -webkit-transition: -webkit-transform 4.8s ease-in-out;
