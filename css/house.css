@@ -108,9 +108,12 @@ transition-delay: 5.2s
 transition: transform 3.8s ease-in-out;
 transition-delay: 5.2s}   
 #Door.openup {
-	transform:skew(0deg, -45deg)translatey(-21%) translatex(-36%) scaleX(0.3) scaleY(1.1);
-	transition: transform 2s ease-in-out;
-	transition-delay: 9s
+	animation-name:  ohshikillthetunes;
+        animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;} 
 	} 
 /* Sky initial trans */
  #Sky.wakethefup {
@@ -152,4 +155,13 @@ transition-delay: 5.2s}
      z-index: -100;
      pointer-events:none;
 }
- 
+   @keyframes ohshikillthetunes {
+        0% {
+			transform:skew(0deg, 0deg) translatey(-80%)translateX(200%) scale(3.0);
+        }
+        33% {
+	transform:skew(0deg, -20deg)translatey(-80%) translatex(64%) scaleX(1.3) scaleY(3.1);
+        }
+        66% {}
+        100%{ transform:scale(9) translatex(-64%);}
+    }
