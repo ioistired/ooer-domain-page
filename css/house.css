@@ -85,7 +85,7 @@ body {
      left:-50%;
      top:-50%;
      transform-origin: 50% 50%;
-     z-index: 100;
+     z-index: 90;
      pointer-events:none;
 }
 #Door {
