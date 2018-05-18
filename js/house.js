@@ -37,6 +37,9 @@ Sky.style.display = "none";
 TopHouse.style.display = "none";
 Door.style.display = "none";
 }
+function finaltrans()
+{Door.classList.add("openup");
+}
 function startsound()
 {
 	tapesound.play();
@@ -61,6 +64,7 @@ function onplay(e)
 	Door.style.zIndex = "100";
 	setTimeout(playoff, 7000);
 	setTimeout(houseaway, 12000);
+	setTimeout(finaltrans, 9000);
 	setTimeout(startvid, 5000);
 	setTimeout(endstatic, 2000);
 	setTimeout(startsound, 1000);
