@@ -39,6 +39,9 @@ Door.style.display = "none";
 }
 function finaltrans()
 {Door.classList.add("openup");
+ Door.classList.remove("hmmyesthisfloorismade");
+ TopHouse.classList.add("openup");
+ TopHouse.classList.remove("hmmyesthisfloorismade");
 }
 function startsound()
 {
