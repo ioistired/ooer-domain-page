@@ -33,7 +33,6 @@ function playoff()
 }
 function houseaway()
 {
-Sky.style.display = "none";
 TopHouse.style.display = "none";
 Door.style.display = "none";
 }
@@ -46,6 +45,7 @@ function finaltrans()
  TopHouse.classList.remove("hmmyesthisfloorismade");
  TopHouse.classList.remove("wakethefup");
  TopHouse.style.filter = "saturate(105%)brightness(135%)";
+ Sky.style.display = "none";
 }
 function startsound()
 {
