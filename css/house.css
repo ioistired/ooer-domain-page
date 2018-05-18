@@ -121,7 +121,7 @@ body {
      animation-iteration-count: 1;
      animation-timing-function: ease-out;
      animation-fill-mode: forwards;
-     animation-delay: 1.25s;
+     animation-delay: 0s;
 }
 /* Sky initial trans */
  #Sky.wakethefup {
@@ -169,23 +169,23 @@ body {
          transform:skew(0deg, -20deg)translatey(-80%) translatex(64%) scaleX(1.3) scaleY(3.1);
     }
      99%{
-         transform:scale(9) translatex(-154%);
+         transform:scale(9) translatex(-154%);opacity: 100;
     }
      100% {
-        display:none;
+        display:none;opacity: 0;
     }
 }
  @keyframes didntneedahouseanyway {
      0% {
          transform: translatey(-60%) translateX(35%) scale(3.0);
     }
-     55% {
+     55% {transform: translatey(-60%) translateX(35%) scale(3.0);
     }
      99%{
-         transform:scale(49) translatey(-17%) translatex(12%);
+         transform:scale(49) translatey(-17%) translatex(12%);opacity: 100;
     }
      100% {
-        display:none;
+        display:none;opacity: 0;
     }
 }
  
