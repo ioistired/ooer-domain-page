@@ -4,9 +4,6 @@ var video = undefined;
 var canvas = undefined;
 var tapesound = undefined;
 var staticsound = undefined;
-var TopHouse = document.getElementById("TopHouse");
-var Sky = document.getElementById("Sky");
-var Door = document.getElementById("Door");
 
 function endstatic()
 {
@@ -47,6 +44,9 @@ function startsound()
 
 function onplay(e)
 {
+	var TopHouse = document.getElementById("TopHouse");
+	var Sky = document.getElementById("Sky");
+	var Door = document.getElementById("Door");
 	pause.style.display = "none";
 	play.style.display = "inline";
    	Sky.classList.add("wakethefup");
