@@ -115,6 +115,13 @@ transition-delay: 5.2s}
 	animation-fill-mode: forwards;
 	animation-delay: 0s; 
 	} 
+#TopHouse.openup {
+	animation-name: didntneedahouseanyway;
+        animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.25s;} 
 /* Sky initial trans */
  #Sky.wakethefup {
      -webkit-transition: -webkit-transform 4.8s ease-in-out;
@@ -159,9 +166,20 @@ transition-delay: 5.2s}
         0% {
 			transform:skew(0deg, 0deg) translatey(-80%)translateX(200%) scale(3.0);
         }
-        33% {
+        55% {
 	transform:skew(0deg, -20deg)translatey(-80%) translatex(64%) scaleX(1.3) scaleY(3.1);
         }
-        66% {}
-        100%{ transform:scale(9) translatex(-64%);}
+	   99%{ transform:scale(9) translatex(-154%);}
+        100% {display:none;
+        }
+    }
+   @keyframes didntneedahouseanyway {
+        0% {
+			transform: translatey(-60%) translateX(35%) scale(3.0);
+        }
+        55% {
+        }
+        99%{ transform:scale(49) translatey(-17%) translatex(12%);
+        100% {display:none;
+        }
     }
