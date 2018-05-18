@@ -40,8 +40,12 @@ Door.style.display = "none";
 function finaltrans()
 {Door.classList.add("openup");
  Door.classList.remove("hmmyesthisfloorismade");
+ Door.classList.remove("wakethefup");
+ Door.style.filter = "saturate(105%)brightness(135%)";
  TopHouse.classList.add("openup");
  TopHouse.classList.remove("hmmyesthisfloorismade");
+ TopHouse.classList.remove("wakethefup");
+ TopHouse.style.filter = "saturate(105%)brightness(135%)";
 }
 function startsound()
 {
