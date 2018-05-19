@@ -107,9 +107,10 @@ body {
      transition: transform 3.8s ease-in-out;
      transition-delay: 5.2s
 }
+/* Final transform keyframes */
  #Door.openup {
      animation-name: ohshikillthetunes;
-     animation-duration: 1.5s;
+     animation-duration: 0.75s;
      animation-iteration-count: 1;
      animation-timing-function: ease-out;
      animation-fill-mode: forwards;
@@ -117,49 +118,11 @@ body {
 }
  #TopHouse.openup {
      animation-name: didntneedahouseanyway;
-     animation-duration: 1.5s;
+     animation-duration: 0.75s;
      animation-iteration-count: 1;
      animation-timing-function: ease-out;
      animation-fill-mode: forwards;
      animation-delay: 0s;
-}
-/* Sky initial trans */
- #Sky.wakethefup {
-     -webkit-transition: -webkit-transform 4.8s ease-in-out;
-     -moz-transition: -moz-transform 4.8s ease-in-out;
-     -o-transition: -o-transform 4.8s ease-in-out;
-     -ms-transition: -o-transform 4.8s ease-in-out;
-     transition: transform 4.8s ease-in-out;
-     -webkit-transform: rotate(180deg);
-     -moz-transform: rotate(180deg);
-     -o-transform: rotate(180deg);
-     -ms-transform: rotate(180deg);
-     transform: rotate(180deg);
-}
- #TopHouse.wakethefup, #Door.wakethefup {
-     animation-name: riseandshine;
-     animation-duration: 4s;
-     animation-iteration-count: 1;
-     animation-timing-function: ease-out;
-     animation-fill-mode: forwards;
-     animation-delay: 0s;
-}
- @keyframes riseandshine {
-     0% {
-         filter: saturate(60%) brightness(40%);
-    }
-     100% {
-         filter: saturate(105%) brightness(135%);
-    }
-}
- #canvas {
-     width:100%;
-     height:100%;
-     position:absolute;
-     left:0%;
-     top:0%;
-     z-index: -100;
-     pointer-events:none;
 }
  @keyframes ohshikillthetunes {
      0% {
@@ -187,5 +150,44 @@ body {
      100% {
         display:none;opacity: 0;
     }
+}
+/* Sky initial trans */
+ #Sky.wakethefup {
+     -webkit-transition: -webkit-transform 4.8s ease-in-out;
+     -moz-transition: -moz-transform 4.8s ease-in-out;
+     -o-transition: -o-transform 4.8s ease-in-out;
+     -ms-transition: -o-transform 4.8s ease-in-out;
+     transition: transform 4.8s ease-in-out;
+     -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+     -o-transform: rotate(180deg);
+     -ms-transform: rotate(180deg);
+     transform: rotate(180deg);
+}
+/* brightness changes */
+ #TopHouse.wakethefup, #Door.wakethefup {
+     animation-name: riseandshine;
+     animation-duration: 4s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease-out;
+     animation-fill-mode: forwards;
+     animation-delay: 0s;
+}
+ @keyframes riseandshine {
+     0% {
+         filter: saturate(60%) brightness(40%);
+    }
+     100% {
+         filter: saturate(105%) brightness(135%);
+    }
+}
+ #canvas {
+     width:100%;
+     height:100%;
+     position:absolute;
+     left:0%;
+     top:0%;
+     z-index: -100;
+     pointer-events:none;
 }
  
