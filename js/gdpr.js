@@ -1,7 +1,6 @@
 var pause = undefined;
 var play = undefined;
 var audio = undefined;
-var canvas = undefined;
 var tapesound = undefined;
 // var staticsound = undefined;
 
@@ -23,7 +22,6 @@ function audioloop()
 
 function startmusic()
 {
-	canvas.style.display = "inline";
 	audio.play();
 }
 
@@ -48,8 +46,6 @@ function onplay(e)
 
 function reset()
 {
-	canvas.style.display = "none";
-
 	audio.currentTime = 0;
 	audio.pause();
 
@@ -77,7 +73,7 @@ window.onload = function()
 //	staticsound.play();
 
 	audio = document.createElement("audio");
-	audio.src = "http://oman.imjake.me/LawBreaker.mp3";
+	audio.src = "https://oman.imjake.me/LawBreaker.mp3";
 	audio.pause();
 	audio.addEventListener('play',function(){
 		audioloop();
@@ -86,11 +82,4 @@ window.onload = function()
 		reset();
 	},false);
 
-	canvas = document.getElementById("canvas");
-	context = canvas.getContext("2d");
-
-	canvas.width = canvas.clientWidth;
-	canvas.height = canvas.clientHeight;
-
-	context.clearRect(0, 0, canvas.width, canvas.height);
 }
