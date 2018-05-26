@@ -1,3 +1,26 @@
+body {
+    overflow:hidden;
+}
+
+.bigtext {
+			font-size:7.9em;
+			text-align:center;
+			position: relative;
+			top: 50%;
+			transform: translateY(50%);}
+			.youspinmerightround
+			{
+				animation: Bepis 4.15s linear 0s infinite
+			}
+			@keyframes Bepis {
+from {
+        transform:rotate(0deg);
+}
+to {
+        transform:rotate(360deg);
+    }
+}
+
 /* Fonts formatting*/
 
 .smart {
