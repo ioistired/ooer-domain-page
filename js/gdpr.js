@@ -39,8 +39,6 @@ function startsound()
 
 function onplay(e)
 {
-	pause.style.display = "none";
-	play.style.display = "inline";
 
 	setTimeout(playoff, 7000);
 	setTimeout(startmusic, 5000);
@@ -50,8 +48,6 @@ function onplay(e)
 
 function reset()
 {
-	pause.style.display = "inline";
-	play.style.display = "none";
 	canvas.style.display = "none";
 
 	audio.currentTime = 0;
@@ -69,11 +65,7 @@ function reset()
 
 window.onload = function()
 {
-	pause = document.getElementById("pause");
-	play = document.getElementById("play");
 	console.log("load successed");
-	pause.onclick = onplay;
-
 	tapesound = document.createElement("audio");
 	tapesound.src = "/tapefeed.mp3";
 	tapesound.pause();
