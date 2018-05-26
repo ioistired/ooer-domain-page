@@ -27,18 +27,23 @@ function startsound()
 {
 tapesound.play();
 }
-
+function delayedlaw()
+{
+lawbreaker.style.display = null;
+}
 function onplay(e)
 {
 var curvebox = document.getElementById("curvebox");
 var rude = document.getElementById("rude");
 var spun = document.getElementById("spun");
 var cover = document.getElementById("cover");
+var lawbreaker = document.getElementById("lawbreaker");
 curvebox.classList.add("getmeinofhere");
 rude.classList.add("getmeoutofhere");
 rude.style.display = null;
 setTimeout(startmusic, 1600);
 setTimeout(startstyle, 2000);
+setTimeout(delayedlaw, 4500);
 setTimeout(endstatic, 2000);
 }
 
