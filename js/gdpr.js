@@ -27,9 +27,9 @@ function onplay(e)
 var curvebox = document.getElementById("curvebox");
 var rude = document.getElementById("rude");
 var spun = document.getElementById("spun");
-curvebox.classList.add("getmeoutofhere");
-rude.classList.add("getmeinofhere");
-rude.style.display = "True";
+curvebox.classList.add("getmeinofhere");
+rude.classList.add("getmeoutofhere");
+rude.style.display = null;
 setTimeout(startmusic, 5000);
 setTimeout(endstatic, 2000);
 setTimeout(startsound, 1000);
