@@ -6,6 +6,9 @@
 
 .dumb {
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	margin: auto;
+	position: relative;
+	top: 50%;
 }
 
 .herejusttosuffer {
@@ -17,7 +20,7 @@
 
 .getmeoutofhere {
 	animation-name: forthward;
-	animation-duration: 4s;
+	animation-duration: 0.5s;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
@@ -26,7 +29,7 @@
 
 .getmeinofhere {
 	animation-name: backswards;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
