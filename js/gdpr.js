@@ -7,7 +7,7 @@ var tapesound = undefined;
 function endstatic()
 {
 document.body.style.backgroundImage = "none";
-document.body.style.backgroundColor = "black";
+document.body.style.backgroundColor = "white";
 
 //staticsound.pause();
 }
@@ -20,6 +20,9 @@ audio.play();
 function startsound()
 {
 tapesound.play();
+rude.style.display = "none";
+curvebox.style.display = "none";
+spun.style.display = null;
 }
 
 function onplay(e)
@@ -32,7 +35,6 @@ rude.classList.add("getmeoutofhere");
 rude.style.display = null;
 setTimeout(startmusic, 5000);
 setTimeout(endstatic, 2000);
-setTimeout(startsound, 1000);
 }
 
 function reset()
