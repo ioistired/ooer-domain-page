@@ -65,6 +65,7 @@ function reset()
 
 window.onload = function()
 {
+	 var button = getElementById("OHGODWORK"); button.onclick = onplay;
 	console.log("load successed");
 	tapesound = document.createElement("audio");
 	tapesound.src = "/tapefeed.mp3";
