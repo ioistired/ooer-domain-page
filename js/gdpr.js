@@ -43,7 +43,7 @@ rude.classList.add("getmeoutofhere");
 rude.style.display = null;
 setTimeout(startmusic, 1600);
 setTimeout(startstyle, 2000);
-setTimeout(delayedlaw, 4500);
+setTimeout(delayedlaw, 4800);
 setTimeout(endstatic, 2000);
 }
 
