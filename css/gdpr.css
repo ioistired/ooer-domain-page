@@ -26,7 +26,7 @@
 
 .getmeinofhere {
 	animation-name: backswards;
-	animation-duration: 4s;
+	animation-duration: 1s;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
@@ -35,7 +35,7 @@
 
 @keyframes forthward {
 	0% {
-		transform: translatey(50%) translateX(-100%);
+		transform: translatey(50%) translateX(150%);
 	}
 	100% {
 		transform: translatey(50%) translateX(0%);
@@ -47,7 +47,7 @@
 		transform: translatey(50%) translateX(0%);
 	}
 	100% {
-		transform: translatey(50%) translateX(-100%);
+		transform: translatey(50%) translateX(-150%);
 	}
 }
 
