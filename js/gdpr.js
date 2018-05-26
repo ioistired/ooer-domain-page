@@ -35,7 +35,7 @@ var cover = document.getElementById("cover");
 curvebox.classList.add("getmeinofhere");
 rude.classList.add("getmeoutofhere");
 rude.style.display = null;
-setTimeout(startmusic, 5000);
+setTimeout(startmusic, 2000);
 setTimeout(endstatic, 2000);
 }
 
