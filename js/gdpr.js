@@ -6,80 +6,58 @@ var tapesound = undefined;
 
 function endstatic()
 {
-	document.body.style.backgroundImage = "none";
-	document.body.style.backgroundColor = "black";
+document.body.style.backgroundImage = "none";
+document.body.style.backgroundColor = "black";
 
-//	staticsound.pause();
-}
-
-function audioloop()
-{
-		if (audio && !audio.paused && !audio.ended) {
-				context.drawImage(audio, 0, 0, canvas.width, canvas.height);
-				requestAnimationFrame(audioloop);
-		}
+//staticsound.pause();
 }
 
 function startmusic()
 {
-	audio.play();
-}
-
-function playoff()
-{
-	play.style.display = "none";
+audio.play();
 }
 
 function startsound()
 {
-	tapesound.play();
+tapesound.play();
 }
 
 function onplay(e)
 {
-
-	setTimeout(playoff, 7000);
-	setTimeout(startmusic, 5000);
-	setTimeout(endstatic, 2000);
-	setTimeout(startsound, 1000);
+setTimeout(startmusic, 5000);
+setTimeout(endstatic, 2000);
+setTimeout(startsound, 1000);
 }
 
 function reset()
 {
-	audio.currentTime = 0;
-	audio.pause();
+audio.currentTime = 0;
+audio.pause();
 
-	tapesound.currentTime = 0;
-	tapesound.pause();
+tapesound.currentTime = 0;
+tapesound.pause();
 
  // staticsound.play();
 
-	var string = "/img/tiled static.gif";
-	document.body.style.backgroundImage = "url('" + string + "')";
-	document.body.style.backgroundColor = "white";
+var string = "/img/tiled static.gif";
+document.body.style.backgroundImage = "url('" + string + "')";
+document.body.style.backgroundColor = "white";
 }
 
 window.onload = function()
 {
-	 var button = document.getElementById("OHGODWORK"); button.onclick = onplay;
-	console.log("load successed");
-	tapesound = document.createElement("audio");
-	tapesound.src = "/tapefeed.mp3";
-	tapesound.pause();
+var button = document.getElementById("OHGODWORK");
+button.onclick = onplay;
 
-//	staticsound = document.createElement("audio");
-//	staticsound.src = "";
-//	staticsound.loop = true;
-//	staticsound.play();
+console.log("load successed");
+tapesound = document.createElement("audio");
+tapesound.src = "/tapefeed.mp3";
+tapesound.pause();
 
-	audio = document.createElement("audio");
-	audio.src = "https://oman.imjake.me/LawBreaker.mp3";
-	audio.pause();
-	audio.addEventListener('play',function(){
-		audioloop();
+audio = document.createElement("audio");
+audio.src = " https://oman.imjake.me/LawBreaker.mp3 ";
+audio.pause();
+audio.addEventListener('ended',function(){
+	reset();
 	},false);
-	audio.addEventListener('ended',function(){
-		reset();
-	},false);
-
 }
