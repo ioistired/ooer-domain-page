@@ -15,14 +15,15 @@ document.body.style.backgroundColor = "white";
 function startmusic()
 {
 audio.play();
+rude.style.display = "none";
+curvebox.style.display = "none";
+spun.style.display = null;
+cover.classList.add("wrapper");
 }
 
 function startsound()
 {
 tapesound.play();
-rude.style.display = "none";
-curvebox.style.display = "none";
-spun.style.display = null;
 }
 
 function onplay(e)
@@ -30,6 +31,7 @@ function onplay(e)
 var curvebox = document.getElementById("curvebox");
 var rude = document.getElementById("rude");
 var spun = document.getElementById("spun");
+var cover = document.getElementById("cover");
 curvebox.classList.add("getmeinofhere");
 rude.classList.add("getmeoutofhere");
 rude.style.display = null;
