@@ -15,12 +15,14 @@ document.body.style.backgroundColor = "white";
 function startmusic()
 {
 audio.play();
+}
+function startstyle()
+{
 rude.style.display = "none";
 curvebox.style.display = "none";
 spun.style.display = null;
 cover.classList.add("wrapper");
 }
-
 function startsound()
 {
 tapesound.play();
@@ -35,7 +37,8 @@ var cover = document.getElementById("cover");
 curvebox.classList.add("getmeinofhere");
 rude.classList.add("getmeoutofhere");
 rude.style.display = null;
-setTimeout(startmusic, 2000);
+setTimeout(startmusic, 1800);
+setTimeout(startstyle, 2000);
 setTimeout(endstatic, 2000);
 }
 
