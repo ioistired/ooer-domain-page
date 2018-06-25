@@ -98,7 +98,7 @@ function reset()
 
 window.onload = function()
 {
-	pause = document.getElementById("door");
+	pause = document.getElementById("Door");
 	play = document.getElementById("play");
 	console.log("load successed");
 	pause.onclick = onplay;
