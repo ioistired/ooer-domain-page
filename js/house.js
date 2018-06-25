@@ -79,7 +79,7 @@ function onplay(e)
 
 function reset()
 {
-	pause.style.display = "inline";
+//	pause.style.display = "inline";
 	play.style.display = "none";
 	canvas.style.display = "none";
 
@@ -98,7 +98,7 @@ function reset()
 
 window.onload = function()
 {
-	pause = document.getElementById("pause");
+	pause = document.getElementById("door");
 	play = document.getElementById("play");
 	console.log("load successed");
 	pause.onclick = onplay;
