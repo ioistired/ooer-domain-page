@@ -58,6 +58,7 @@ function onplay(e)
 	var Sky = document.getElementById("Sky");
 	var Door = document.getElementById("Door");
 	play.style.display = "inline";
+	Door.classList.remove("woah");
    	Sky.classList.add("wakethefup");
    	TopHouse.classList.add("wakethefup");
 	TopHouse.classList.add("hmmyesthisfloorismade");
