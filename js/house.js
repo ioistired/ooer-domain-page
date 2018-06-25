@@ -57,7 +57,6 @@ function onplay(e)
 	var TopHouse = document.getElementById("TopHouse");
 	var Sky = document.getElementById("Sky");
 	var Door = document.getElementById("Door");
-	pause.style.display = "none";
 	play.style.display = "inline";
    	Sky.classList.add("wakethefup");
    	TopHouse.classList.add("wakethefup");
