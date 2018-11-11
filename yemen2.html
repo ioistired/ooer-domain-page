@@ -12,8 +12,12 @@
 
 <script> 
 window.onload = function() {
-  setTimeout(myFunction2(),3000);
-};
+    setTimeout(function(){if (confirm("Press a button!")) {
+        playVid();
+    } else {
+        pauseVid();
+    }}, 6000);
+}
 var vid = document.getElementById("myVideo"); 
 
 function playVid() { 
