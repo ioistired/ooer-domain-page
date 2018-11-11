@@ -23,20 +23,28 @@
 				</video>
         <button onclick="playVid()">Clicxc</button>
 				<script>
-var vid = document.getElementById("bepisman");
+    var vid = document.getElementById("bepisman");
 
-{
-    function playVid() {
-        try {
-            vid.play();
-        } catch (err) {
-            document.body.style.backgroundColor = "#f3f3f3";
-            document.body.style.backgroundImage = "url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png')";
+    {
+        function playVid() {
+            try {
+                vid.play();
+            } catch (err) {
+                document.body.style.backgroundColor = "#f3f3f3";
+                document.body.style.backgroundImage = "url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png')";
 
-        };
-    }
-}
-				</script>
+            };
+
+            function myFunction() {
+                var txt;
+                if (confirm("Press a button!")) {
+                    playVid();
+                } else {
+                    alert("h");
+                }
+            }
+        }
+    }			</script>
 			</h2>
 		</div>
 	</body>
