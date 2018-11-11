@@ -11,6 +11,9 @@
 </video>
 
 <script> 
+window.onload = function() {
+  setTimeout(myFunction2(),3000);
+};
 var vid = document.getElementById("myVideo"); 
 
 function playVid() { 
@@ -21,7 +24,7 @@ function pauseVid() {
     vid.pause(); 
 } 
 
-//function myFunction2()
+function myFunction2()
   {
     if (confirm("Press a button!")) {
         playVid();
