@@ -91,6 +91,7 @@ body {
      height:100%;
      z-index: 110;
      position:absolute;
+	filter: saturate(60%) brightness(40%);
 }
 /* Glow for door */
  #Door.woah {
