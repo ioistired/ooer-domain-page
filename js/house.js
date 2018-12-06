@@ -70,7 +70,7 @@ function onplay(e)
 //	Door.classList.add("openup");
 //
 	
-	Box.classList.remove("gradient-border");
+	Box.classList = "";
 	Box.style.zIndex = "100";
 	Door.style.zIndex = "100";
 	setTimeout(playoff, 7000);
