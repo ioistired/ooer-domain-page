@@ -70,7 +70,7 @@ function onplay(e)
 //
 	Door.style.zIndex = "100";
 	setTimeout(playoff, 7000);
-	setTimeout(houseaway, 12000);
+	setTimeout(houseaway, 11800);
 	setTimeout(finaltrans, 9000);
 	setTimeout(startvid, 5000);
 	setTimeout(endstatic, 2000);
