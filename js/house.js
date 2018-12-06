@@ -57,6 +57,7 @@ function onplay(e)
 	var TopHouse = document.getElementById("TopHouse");
 	var Sky = document.getElementById("Sky");
 	var Door = document.getElementById("Door");
+	var Box = document.getElementById("Box");
 	play.style.display = "inline";
 	Door.classList.remove("woah");
    	Sky.classList.add("wakethefup");
@@ -68,6 +69,9 @@ function onplay(e)
 // Apply class at your own risk
 //	Door.classList.add("openup");
 //
+	
+	Box.classList.remove("gradient-border");
+	Box.style.zIndex = "100";
 	Door.style.zIndex = "100";
 	setTimeout(playoff, 7000);
 	setTimeout(houseaway, 11800);
