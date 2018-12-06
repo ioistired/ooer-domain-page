@@ -234,7 +234,16 @@ body {
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
-
+.legaljunk
+{
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	font-size: 1.1em;
+	z-index:200;
+	color:white;
+}
 
 @keyframes animatedgradient {
 	0% {
