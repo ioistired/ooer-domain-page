@@ -152,11 +152,8 @@ body {
     }
      55% {transform: translatey(-60%) translateX(35%) scale(3.0);
     }
-     99%{
+     100%{
          transform:scale(49) translatey(-17%) translatex(12%);opacity: 100;
-    }
-     100% {
-        display:none;opacity: 0;
     }
 }
 /* Sky initial trans */
