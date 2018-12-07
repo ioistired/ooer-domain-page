@@ -5,7 +5,7 @@ var canvas = undefined;
 var tapesound = undefined;
 var staticsound = undefined;
 
-function endstatic()
+function endstatic() 
 {
 	document.body.style.backgroundImage = "none";
 	document.body.style.backgroundColor = "black";
@@ -31,12 +31,13 @@ function playoff()
 {
 	play.style.display = "none";
 }
-function houseaway()
+function houseaway() //Removal of elements (Exc. Sky)
 {
 TopHouse.style.display = "none";
 Door.style.display = "none";
+Box.style.display = "none";
 }
-function finaltrans()
+function finaltrans() //Final anims before video fullscreen
 {Door.classList.add("openup");
  Door.classList.remove("hmmyesthisfloorismade");
  Door.classList.remove("wakethefup");
@@ -52,8 +53,9 @@ function startsound()
 	tapesound.play();
 }
 
-function onplay(e)
+function onplay(e) //Begin anims states
 {
+	console.log("should be playing now, else panic");
 	var TopHouse = document.getElementById("TopHouse");
 	var Sky = document.getElementById("Sky");
 	var Door = document.getElementById("Door");
@@ -65,14 +67,12 @@ function onplay(e)
 	TopHouse.classList.add("hmmyesthisfloorismade");
 	Door.classList.add("wakethefup");
 	Door.classList.add("hmmyesthisfloorismade");
-// Sandboxing door tweens, they will need to be converted to be used alongside other css rules.
-// Apply class at your own risk
-//	Door.classList.add("openup");
-//
-	
+//	Legacy css trans
+//	Door.classList.add("openup");	
 	Box.classList.remove("gradient-border");
 	Box.style.zIndex = "100";
 	Door.style.zIndex = "100";
+// Always set js removal to go off before css trans to avoid single frame flicker
 	setTimeout(playoff, 7000);
 	setTimeout(houseaway, 11800);
 	setTimeout(finaltrans, 9000);
@@ -81,7 +81,7 @@ function onplay(e)
 	setTimeout(startsound, 1000);
 }
 
-function reset()
+function reset() //Non functional, to be fixed next build
 {
 //	pause.style.display = "inline";
 	play.style.display = "none";
@@ -100,7 +100,7 @@ function reset()
 	document.body.style.backgroundColor = "white";
 }
 
-window.onload = function()
+window.onload = function() //Video + Audio handlers
 {
 	pause = document.getElementById("Door");
 	play = document.getElementById("play");
